@@ -1,0 +1,52 @@
+.module {
+  padding: 2rem;
+}
+
+.col-lg-3 .module-content {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.col-lg-6 .module-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.module-sign {
+  background: $yellow;
+}
+
+.module-share {
+  background: $teal;
+}
+
+.module-manifesto {
+  background: $gray-100;
+}
+
+.module-demonstration {
+  color: $teal;
+}
+
+.module-contact {
+  background: $dark-color;
+}
+
+@include media-breakpoint-up(lg) {
+  .module-sign,
+  .module-share {
+    height: 50%;
+  }
+
+  .sign-share {
+    order: 1;
+  }
+
+  .manifesto {
+    order: 2;
+  }
+
+  .demonstration {
+    order: 3;
+  }
+}

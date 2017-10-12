@@ -2,17 +2,17 @@
 
 @section('content')
   <div class="row">
-    <div class="col-md-3">
-      @include('partials.sign')
-      @include('partials.share')
+    <div class="col-lg-3 demonstration">
+      @include('partials.demonstration')
     </div>
 
-    <div class="col-md-6">
+    <div class="col-lg-6 manifesto">
       @include('partials.manifesto')
     </div>
 
-    <div class="col-md-3">
-      @include('partials.demonstration')
+    <div class="col-lg-3 sign-share">
+      @include('partials.sign')
+      @include('partials.share')
     </div>
   </div>
 
