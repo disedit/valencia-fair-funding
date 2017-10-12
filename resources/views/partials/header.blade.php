@@ -11,13 +11,13 @@
 
 <header class="container-fluid banner">
   <div class="row">
-    <div class="col-md-8">
+    <div class="claim col-md-9">
       <h1>
         <span class="upper-slogan">{{ __('Per un', 'fair-funding') }}</span>
         <span class="main-slogan">{{ __('Finançament Just', 'fair-funding') }}</span>
       </h1>
   </div>
-  <div class="col-md-4">
+  <div class="map col-md-3">
     Map
   </div>
 </header>

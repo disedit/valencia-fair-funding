@@ -1,3 +1,39 @@
+.top {
+  padding: 1rem;
+}
+
+.banner {
+  .claim,
+  .map {
+    padding: 2rem;
+  }
+
+  .claim {
+    padding: 4rem 2rem;
+    background: $dark-color;
+    color: #fff;
+  }
+
+  .map {
+    padding: 2rem;
+    background: $teal;
+  }
+
+  .upper-slogan {
+    display: block;
+    font-size: 2.5rem;
+  }
+
+  .main-slogan {
+    display: block;
+    color: $yellow;
+    font-weight: bold;
+    font-size: 4rem;
+    max-width: 400px;
+    line-height: 0.9;
+  }
+}
+
 .banner .nav li {
   @extend .nav-item;
 }
