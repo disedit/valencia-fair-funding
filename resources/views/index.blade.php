@@ -1,8 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-  @include('partials.page-header')
-
   <div class="row">
     <div class="col-md-3">
       @include('partials.sign')
