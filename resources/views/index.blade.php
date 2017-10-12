@@ -3,16 +3,27 @@
 @section('content')
   @include('partials.page-header')
 
-  @if (!have_posts())
-    <div class="alert alert-warning">
-      {{ __('Sorry, no results were found.', 'sage') }}
+  <div class="row">
+    <div class="col-md-3">
+      @include('partials.sign')
+      @include('partials.share')
     </div>
-    {!! get_search_form(false) !!}
-  @endif
 
-  @while (have_posts()) @php(the_post())
-    @include('partials.content-'.get_post_type())
-  @endwhile
+    <div class="col-md-6">
+      @include('partials.manifesto')
+    </div>
 
-  {!! get_the_posts_navigation() !!}
+    <div class="col-md-3">
+      @include('partials.demonstration')
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+      News
+    </div>
+    <div class="col-md-9">
+      {{--@include('partials.articles')--}}
+    </div>
+  </div>
 @endsection

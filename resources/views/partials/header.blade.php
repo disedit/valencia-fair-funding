@@ -9,9 +9,16 @@
   </div>
 </header>
 
-<header class="banner">
-  <div class="container">
-
+<header class="container-fluid banner">
+  <div class="row">
+    <div class="col-md-8">
+      <h1>
+        <span class="upper-slogan">{{ __('Per un', 'fair-funding') }}</span>
+        <span class="main-slogan">{{ __('Finançament Just', 'fair-funding') }}</span>
+      </h1>
+  </div>
+  <div class="col-md-4">
+    Map
   </div>
 </header>
 
