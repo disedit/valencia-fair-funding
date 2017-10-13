@@ -5,52 +5,22 @@
   right: 0;
   z-index: 100;
   width: 100%;
-  background: $white;
+  background: $teal;
   height: 62px;
   transition: 0.2s ease-in-out;
 
   .container-fluid {
     position: relative;
   }
+
+  .col {
+    position: relative;
+    height: 62px;
+  }
 }
 
 .top-shadow {
   box-shadow: 0 1px 20px -3px rgba(0, 0, 0, 0.3);
-}
-
-.banner {
-  margin-top: 62px;
-
-  .claim,
-  .map {
-    padding: 2rem;
-  }
-
-  .claim {
-    padding: 4rem 2rem;
-    background: $dark-color;
-    color: #fff;
-    text-align: center;
-  }
-
-  .map {
-    padding: 2rem;
-    background: $teal;
-  }
-
-  .upper-slogan {
-    display: block;
-    font-size: 2.5rem;
-  }
-
-  .main-slogan {
-    display: block;
-    color: $yellow;
-    font-weight: bold;
-    font-size: 3rem;
-    line-height: 0.9;
-    text-align: center;
-  }
 }
 
 .elem-hidden {
@@ -70,7 +40,7 @@
   }
 
   a {
-    color: $dark-color;
+    color: $white;
   }
 }
 
@@ -114,7 +84,7 @@
   }
 }
 
-.languages {
+.menu {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -128,29 +98,89 @@
 
   li {
     list-style: none;
-    height: 28px;
     margin: 0 5px;
+  }
 
-    &:first-child {
-      margin-left: auto;
-    }
-
-    a {
-      display: block;
-      padding: 5px 10px;
-    }
-
-    &:last-child {
-      a {
-        border-right: 0;
-      }
-    }
+  a {
+    display: block;
+    padding: 5px 10px;
+    color: $white;
   }
 
   .active {
     a {
       font-weight: bold;
     }
+  }
+}
+
+.menu-slided {
+  .menu-items {
+    visibility: visible;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    transition: 0.2s ease-in-out;
+  }
+}
+
+.menu-items {
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 62px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  ul {
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+
+  li {
+    margin: 0.5rem 5px;
+  }
+
+  a {
+    color: $blue;
+    display: block;
+    font-size: 1.5rem;
+  }
+}
+
+.banner {
+  margin-top: 62px;
+
+  .claim,
+  .map {
+    padding: 2rem;
+  }
+
+  .claim {
+    padding: 4rem 2rem;
+    background: $dark-color;
+    color: #fff;
+    text-align: center;
+  }
+
+  .map {
+    padding: 2rem;
+    background: $teal;
+  }
+
+  .upper-slogan {
+    display: block;
+    font-size: 2.5rem;
+  }
+
+  .main-slogan {
+    display: block;
+    color: $yellow;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 0.9;
+    text-align: center;
   }
 }
 
@@ -172,6 +202,47 @@
       font-size: 4rem;
       text-align: left;
       max-width: 400px;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .top {
+    background: $white;
+  }
+
+  .hashtag a {
+    color: $dark-color;
+  }
+
+  .menu {
+    a {
+      color: $blue;
+      font-size: 1rem;
+    }
+
+    li {
+      height: 28px;
+    }
+
+    li:first-child {
+      margin-left: auto;
+    }
+  }
+
+  .menu-items {
+    visibility: visible;
+    height: 100%;
+    position: static;
+    background: transparent !important;
+
+    ul {
+      margin-top: 0;
+      flex-direction: row;
+    }
+
+    li {
+      margin: 0 5px;
     }
   }
 }

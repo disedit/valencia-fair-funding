@@ -15,6 +15,11 @@ export default {
       $(".organizers").toggleClass('elem-hidden',$(this).scrollTop() > 200);
       $(".top").toggleClass('top-shadow',$(this).scrollTop() > 1);
     });
+
+    $(".menu-trigger a").on('click', function(e) {
+      e.preventDefault();
+      $(".menu").toggleClass('menu-slided');
+    });
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired

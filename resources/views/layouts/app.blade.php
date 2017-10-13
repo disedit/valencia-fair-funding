@@ -12,12 +12,15 @@
     }(document, 'script', 'facebook-jssdk'));</script>
 
     @php(do_action('get_header'))
-    @include('partials.header')
-    <div class="container-fluid" role="document">
-      @yield('content')
+    <div class="page-wrapper">
+      @include('partials.header')
+      <div class="container-fluid" role="document">
+        @yield('content')
+      </div>
+      @php(do_action('get_footer'))
+      @include('partials.footer')
     </div>
-    @php(do_action('get_footer'))
-    @include('partials.footer')
+
     @php(wp_footer())
     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
   </body>
