@@ -5,9 +5,15 @@ export default {
     });
 
     $(".main-input input").on('blur', function() {
-      if(!$(this).val()) {  
+      if(!$(this).val()) {
         $(this).parent().removeClass('main-input-active');
       }
+    });
+
+    $(window).bind('scroll', function(){
+      $(".hashtag").toggleClass('elem-hidden',$(this).scrollTop() <= 200);
+      $(".organizers").toggleClass('elem-hidden',$(this).scrollTop() > 200);
+      $(".top").toggleClass('top-shadow',$(this).scrollTop() > 1);
     });
   },
   finalize() {

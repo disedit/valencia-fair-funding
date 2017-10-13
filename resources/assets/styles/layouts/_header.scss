@@ -1,9 +1,26 @@
 .top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  width: 100%;
   background: $white;
-  padding: 1rem;
+  height: 62px;
+  transition: 0.2s ease-in-out;
+
+  .container-fluid {
+    position: relative;
+  }
+}
+
+.top-shadow {
+  box-shadow: 0 1px 20px -3px rgba(0, 0, 0, 0.3);
 }
 
 .banner {
+  margin-top: 62px;
+
   .claim,
   .map {
     padding: 2rem;
@@ -13,6 +30,7 @@
     padding: 4rem 2rem;
     background: $dark-color;
     color: #fff;
+    text-align: center;
   }
 
   .map {
@@ -29,13 +47,40 @@
     display: block;
     color: $yellow;
     font-weight: bold;
-    font-size: 4rem;
-    max-width: 400px;
+    font-size: 3rem;
     line-height: 0.9;
+    text-align: center;
+  }
+}
+
+.elem-hidden {
+  opacity: 0 !important;
+  z-index: -1;
+}
+
+.hashtag {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  a {
+    color: $dark-color;
   }
 }
 
 .organizers {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+
   ul {
     margin: 0;
     padding: 0;
@@ -46,7 +91,15 @@
     list-style: none;
 
     img {
+      filter: #{"grayscale(#{1})"};
+      opacity: 0.75;
       height: 30px;
+      transition: 0.2s ease-in;
+
+      &:hover {
+        filter: #{"grayscale(#{0})"};
+        opacity: 1;
+      }
     }
   }
 
@@ -62,14 +115,42 @@
 }
 
 .languages {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
   ul {
     margin: 0;
     padding: 0;
+    display: flex;
+    align-items: center;
   }
 
   li {
-    display: inline-block;
     list-style: none;
+    height: 28px;
+    margin: 0 5px;
+
+    &:first-child {
+      margin-left: auto;
+    }
+
+    a {
+      display: block;
+      padding: 5px 10px;
+    }
+
+    &:last-child {
+      a {
+        border-right: 0;
+      }
+    }
+  }
+
+  .active {
+    a {
+      font-weight: bold;
+    }
   }
 }
 
@@ -79,6 +160,20 @@
 
 .banner .nav a {
   @extend .nav-link;
+}
+
+@include media-breakpoint-up(md) {
+  .banner {
+    .claim {
+      text-align: left;
+    }
+
+    .main-slogan {
+      font-size: 4rem;
+      text-align: left;
+      max-width: 400px;
+    }
+  }
 }
 
 @include media-breakpoint-up(xl) {
