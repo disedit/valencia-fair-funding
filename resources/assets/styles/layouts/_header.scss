@@ -1,4 +1,5 @@
 .top {
+  background: $white;
   padding: 1rem;
 }
 
@@ -40,4 +41,10 @@
 
 .banner .nav a {
   @extend .nav-link;
+}
+
+@include media-breakpoint-up(xl) {
+  .banner .claim {
+    padding: 6rem 4rem;
+  }
 }

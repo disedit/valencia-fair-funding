@@ -2,15 +2,35 @@
   <div class="module-content">
     <h2>{{ __('Manifestació', 'fair-funding') }}</h2>
 
-    <div class="demo-date">
+    <div class="date">
       18N
     </div>
 
     <ul>
-      <li>Plaça Sant Agustí</li>
-      <li>12:00</li>
-      <li>Transport</li>
-      <li>Més info</li>
+      <li>
+        <a href="">
+          <i class="far fa-map-marker-alt"></i>
+          <span>Plaça Sant Agustí</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <i class="far fa-clock"></i>
+          <span>12:00</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <i class="far fa-bus"></i>
+          <span>Transport</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <i class="far fa-info-circle"></i>
+          <span>Més info</span>
+        </a>
+      </li>
     </ul>
   </div>
 </div>
