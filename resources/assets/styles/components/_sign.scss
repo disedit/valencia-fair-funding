@@ -8,4 +8,12 @@
   .custom-checkbox {
     margin-bottom: 2rem;
   }
+
+  .btn-primary {
+    background: $pink;
+
+    &:hover {
+      background: darken($pink, 10%);
+    }
+  }
 }

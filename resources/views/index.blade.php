@@ -16,12 +16,5 @@
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-lg-3">
-      News
-    </div>
-    <div class="col-lg-9">
-      {{--@include('partials.articles')--}}
-    </div>
-  </div>
+  @include('partials.articles')
 @endsection
