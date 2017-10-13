@@ -1,20 +1,20 @@
 <div class="module module-sign">
   <div class="module-content">
     <div class="module-header">
-      <i class="far fa-pencil-alt" aria-hidden="true"></i>
       <h2>{{ __('Signa', 'fair-funding') }}</h2>
+      <i class="far fa-pencil-alt" aria-hidden="true"></i>
     </div>
 
     <p>{{ __('Lorem ipsum', 'fair-funding') }}</p>
 
     <form>
-      <div class="form-group">
+      <div class="form-group main-input">
         <label for="name">{{ __('Nom i cognoms', 'fair-funding') }}</label>
-        <input type="text" class="form-control" id="name" placeholder="{{ __('Nom i cognoms', 'fair-funding') }}">
+        <input type="text" class="form-control form-control-lg" id="name">
       </div>
-      <div class="form-group">
+      <div class="form-group main-input">
         <label for="email">{{ __('E-mail', 'fair-funding') }}</label>
-        <input type="email" class="form-control" id="email" placeholder="Enter email">
+        <input type="email" class="form-control form-control-lg" id="email">
       </div>
       <label class="custom-control custom-checkbox">
         <input type="checkbox" class="custom-control-input">

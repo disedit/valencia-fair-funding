@@ -2,12 +2,12 @@
   padding: 2rem;
 }
 
-.col-md-3 .module-content {
-  max-width: 250px;
+.col-lg-3 .module-content {
+  max-width: 450px;
   margin: 0 auto;
 }
 
-.col-md-6 .module-content {
+.col-lg-6 .module-content {
   max-width: 700px;
   margin: 0 auto;
 }
@@ -17,7 +17,7 @@
 
   .svg-inline--fa {
     font-size: 3rem;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
   }
 }
 
@@ -28,7 +28,7 @@
 @import 'articles';
 @import 'contact';
 
-@include media-breakpoint-up(md) {
+@include media-breakpoint-up(lg) {
   .sign-share {
     order: 1;
   }
@@ -39,6 +39,11 @@
 
   .demonstration {
     order: 3;
+  }
+
+  .col-lg-3 .module-content {
+    max-width: 300px;
+    margin: 0 auto;
   }
 }
 
