@@ -1,11 +1,13 @@
 <div class="module module-sign">
+  <div class="module-icon">
+    <i class="far fa-pencil-alt" aria-hidden="true"></i>
+  </div>
   <div class="module-content">
     <div class="module-header">
-      <h2>{{ __('Signa', 'fair-funding') }}</h2>
-      <i class="far fa-pencil-alt" aria-hidden="true"></i>
+      <h2><i class="far fa-pencil-alt" aria-hidden="true"></i> {{ __('Signa', 'fair-funding') }}</h2>
     </div>
 
-    <p>{{ __('Lorem ipsum', 'fair-funding') }}</p>
+    <p class="module-text">{{ __('Lorem ipsum', 'fair-funding') }}</p>
 
     <form>
       <div class="form-group main-input">

@@ -1,4 +1,36 @@
 .module-share {
   background: $teal;
   color: $white;
+
+  .share-buttons {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style: none;
+      padding: 0.5rem 0;
+    }
+
+    .btn {
+      border: 3px $white solid;
+    }
+
+    .btn-facebook {
+      background: #4265af;
+
+      &:hover,
+      &:active {
+        background: darken(#4265af, 10%);
+      }
+    }
+
+    .btn-twitter {
+      background: #199fef;
+
+      &:hover,
+      &:active {
+        background: darken(#199fef, 10%);
+      }
+    }
+  }
 }
