@@ -2,15 +2,15 @@
 
 @section('content')
   <div class="row">
-    <div class="col-lg-3 demonstration">
+    <div class="col-md-3 demonstration">
       @include('partials.demonstration')
     </div>
 
-    <div class="col-lg-6 manifesto">
+    <div class="col-md-6 manifesto">
       @include('partials.manifesto')
     </div>
 
-    <div class="col-lg-3 sign-share">
+    <div class="col-md-3 sign-share">
       @include('partials.sign')
       @include('partials.share')
     </div>
