@@ -1,0 +1,150 @@
+.top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  width: 100%;
+  background: $teal;
+  height: 62px;
+  transition: 0.2s ease-in-out;
+
+  .container-fluid {
+    position: relative;
+  }
+
+  .col {
+    position: relative;
+    height: 62px;
+  }
+}
+
+.top-shadow {
+  box-shadow: 0 1px 20px -3px rgba(0, 0, 0, 0.3);
+}
+
+.elem-hidden {
+  opacity: 0 !important;
+  z-index: -1;
+}
+
+.hashtag {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  a {
+    color: $white;
+  }
+}
+
+.organizers {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    list-style: none;
+
+    img {
+      filter: #{"grayscale(#{1})"};
+      opacity: 0.75;
+      height: 30px;
+      transition: 0.2s ease-in;
+
+      &:hover {
+        filter: #{"grayscale(#{0})"};
+        opacity: 1;
+      }
+    }
+  }
+
+  .ccoo img {
+    margin-left: 10px;
+    height: 23px;
+  }
+
+  .podemos img {
+    height: 14px;
+    margin-left: 10px;
+  }
+}
+
+.menu {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  li {
+    list-style: none;
+    margin: 0 5px;
+  }
+
+  a {
+    display: block;
+    padding: 5px 10px;
+    color: $white;
+  }
+
+  .active {
+    a {
+      font-weight: bold;
+    }
+  }
+}
+
+.menu-slided {
+  .menu-items {
+    visibility: visible;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    transition: 0.2s ease-in-out;
+  }
+}
+
+.menu-items {
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 62px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  ul {
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+
+  li {
+    margin: 0.5rem 5px;
+  }
+
+  a {
+    color: $blue;
+    display: block;
+    font-size: 1.5rem;
+  }
+}
