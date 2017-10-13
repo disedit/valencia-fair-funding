@@ -35,6 +35,44 @@
   }
 }
 
+.organizers {
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    list-style: none;
+
+    img {
+      height: 30px;
+    }
+  }
+
+  .ccoo img {
+    margin-left: 10px;
+    height: 23px;
+  }
+
+  .podemos img {
+    height: 14px;
+    margin-left: 10px;
+  }
+}
+
+.languages {
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    list-style: none;
+  }
+}
+
 .banner .nav li {
   @extend .nav-item;
 }
