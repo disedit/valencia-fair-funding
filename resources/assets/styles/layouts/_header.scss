@@ -247,6 +247,8 @@
   }
 }
 
+@import 'components/metro';
+
 @include media-breakpoint-up(xl) {
   .banner .claim {
     padding: 6rem 4rem;
