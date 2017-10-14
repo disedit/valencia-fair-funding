@@ -8,7 +8,7 @@
         <span class="main-slogan">{{ __('Finançament Just', 'fair-funding') }}</span>
       </h1>
 
-      @include('partials.metro')
+      @include('partials.modules.metro')
   </div>
   <div class="map col-lg-3 d-none d-lg-block">
     <img src="@asset('images/map.png')" alt="Mapa" aria-hidden="true" />
