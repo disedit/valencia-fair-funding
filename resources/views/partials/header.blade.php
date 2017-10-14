@@ -11,6 +11,6 @@
       @include('partials.metro')
   </div>
   <div class="map col-lg-3 d-none d-lg-block">
-    Map
+    <img src="@asset('images/map.png')" alt="Mapa" aria-hidden="true" />
   </div>
 </header>
