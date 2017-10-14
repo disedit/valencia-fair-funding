@@ -7,7 +7,7 @@
       <h2><i class="far fa-bullhorn" aria-hidden="true"></i> {{ __('Fes difussió', 'fair-funding') }}</h2>
     </div>
 
-    <p class="module-text">Lorem ipsum</p>
+    <p class="module-text">{{ __('Lorem ipsum difusió', 'fair-funding') }}</p>
 
     <ul class="share-buttons">
       <li><a href="" class="btn btn-dark btn-facebook btn-lg btn-block"><i class="fab fa-facebook-square"></i> Facebook</a></li>

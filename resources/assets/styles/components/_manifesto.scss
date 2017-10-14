@@ -1,3 +1,12 @@
 .manifesto {
   background: $gray-100;
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  p {
+    text-align: justify;
+    line-height: 1.75;
+  }
 }

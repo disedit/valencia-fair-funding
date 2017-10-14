@@ -11,7 +11,7 @@
     </div>
 
     <div class="hashtag elem-hidden">
-      <h1><a href="">#FinançamentJust</a></h1>
+      <h1><a href="{{ pll_home_url() }}">#FinançamentJust</a></h1>
     </div>
 
     <div class="menu">
@@ -39,7 +39,7 @@
         </ul>
       </div>
       <ul class="menu-trigger d-lg-none">
-        <li><a href=""><i class="far fa-bars"></i> <span class="sr-only">Menú</span></a></li>
+        <li><a href="#"><i class="far fa-bars"></i> <span class="sr-only">Menú</span></a></li>
       </ul>
     </div>
   </div>
