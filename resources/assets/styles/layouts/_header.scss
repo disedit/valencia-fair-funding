@@ -27,13 +27,18 @@
     text-align: center;
 
     img {
-      width: 200px;
+      width: 125px;
     }
+  }
+
+  .home .map img {
+    width: 200px;
   }
 
   .upper-slogan {
     display: block;
     font-size: 2.5rem;
+    animation: slide-up 0.8s ease-in-out;
   }
 
   .main-slogan {
@@ -43,6 +48,10 @@
     font-size: 3rem;
     line-height: 0.9;
     text-align: center;
+    animation: slide-up 0.8s ease-in-out;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
   }
 }
 
