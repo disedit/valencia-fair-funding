@@ -35,12 +35,7 @@
           <li>
             <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="dfgfdg" data-url="http://fincancamentjust.com" data-hashtags="FinançamentJust" data-show-count="false">Tweet</a>
           </li>
-          <li class="active">
-            <a href="">Valencià</a>
-          </li>
-          <li>
-            <a href="">Castellano</a>
-          </li>
+          @php(pll_the_languages())
         </ul>
       </div>
       <ul class="menu-trigger d-lg-none">
