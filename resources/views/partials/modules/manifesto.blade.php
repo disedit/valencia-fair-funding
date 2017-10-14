@@ -19,7 +19,9 @@
       </div>
     </div>
 
-    @php(the_content(''))
+    <div class="manifesto-content">
+      @php(the_content(''))
+    </div>
 
     <hr aria-hidden="true" />
 
