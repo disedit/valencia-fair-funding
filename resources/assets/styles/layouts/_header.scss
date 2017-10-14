@@ -25,10 +25,12 @@
     padding: 2rem;
     background: $teal;
     text-align: center;
+    width: 125px;
+  }
 
-    img {
-      width: 125px;
-    }
+  .map-svg {
+    width: 125px;
+    margin: 0 auto;
   }
 
   .upper-slogan {
@@ -51,7 +53,7 @@
   }
 }
 
-.home .banner .map img {
+.home .banner .map-svg {
   width: 200px;
 }
 

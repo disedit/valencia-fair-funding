@@ -15,6 +15,6 @@
       @endif
   </div>
   <div class="map col-lg-3 d-none d-lg-block">
-    <img src="@asset('images/map.png')" alt="Mapa" aria-hidden="true" />
+    @include('partials.map')
   </div>
 </header>
