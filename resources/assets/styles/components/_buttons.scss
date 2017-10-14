@@ -1,0 +1,13 @@
+.btn {
+  .icon {
+    opacity: 0;
+    transition: 0.2 ease-in-out;
+  }
+
+  &:hover,
+  &:active {
+    .icon {
+      opacity: 1;
+    }
+  }
+}
