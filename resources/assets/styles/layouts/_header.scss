@@ -16,6 +16,11 @@
   .map {
     padding: 2rem;
     background: $teal;
+    text-align: center;
+
+    img {
+      width: 200px;
+    }
   }
 
   .upper-slogan {
@@ -50,47 +55,6 @@
     .main-slogan {
       font-size: 4rem;
       text-align: left;
-    }
-  }
-}
-
-@include media-breakpoint-up(lg) {
-  .top {
-    background: $white;
-  }
-
-  .hashtag a {
-    color: $dark-color;
-  }
-
-  .menu {
-    a {
-      color: $blue;
-      font-size: 1rem;
-    }
-
-    li {
-      height: 28px;
-    }
-
-    li:first-child {
-      margin-left: auto;
-    }
-  }
-
-  .menu-items {
-    visibility: visible;
-    height: 100%;
-    position: static;
-    background: transparent !important;
-
-    ul {
-      margin-top: 0;
-      flex-direction: row;
-    }
-
-    li {
-      margin: 0 5px;
     }
   }
 }
