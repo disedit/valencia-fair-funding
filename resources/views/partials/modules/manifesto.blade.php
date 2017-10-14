@@ -8,7 +8,16 @@
       setup_postdata($post);
     @endphp
 
-    <h2>@php(the_title())</h2>
+    <div class="row">
+      <div class="col-sm-6">
+        <h2>@php(the_title())</h2>
+      </div>
+      <div class="col-sm-6">
+        <a href="@php(the_permalink())" class="manifesto-signatures">
+          <span>1</span> <span>2</span> <span>3</span> <span>4</span> signatures
+        </a>
+      </div>
+    </div>
 
     @php(the_content(''))
 
