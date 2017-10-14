@@ -20,6 +20,19 @@ export default {
       e.preventDefault();
       $(".menu").toggleClass('menu-slided');
     });
+
+    $(".load-modal").on('click', function(e) {
+      e.preventDefault();
+
+      const modalTitle = $(this).data('title');
+      const container = $(this).data('container');
+      const loadUrl = $(this).attr('href') + ' #' + container;
+
+      $('#pageModal .modal-body').text(modalTitle);
+      $('#pageModal .modal-body').load(loadUrl, function() {
+        $('#pageModal').modal();
+      });
+    });
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired

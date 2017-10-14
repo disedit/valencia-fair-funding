@@ -1,0 +1,13 @@
+.modal-header,
+.modal-footer {
+  border: 0;
+}
+
+.modal-content {
+  border-width: 3px;
+}
+
+.modal-title {
+  color: theme-color("primary");
+  font-size: 1.75rem;
+}
