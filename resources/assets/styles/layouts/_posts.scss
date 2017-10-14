@@ -1,0 +1,12 @@
+.post-content {
+  p,
+  li {
+    font-size: 1.1rem;
+    line-height: 2;
+    text-align: justify;
+  }
+
+  p:first-child {
+    margin-top: 0;
+  }
+}
