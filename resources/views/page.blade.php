@@ -2,7 +2,22 @@
 
 @section('content')
   @while(have_posts()) @php(the_post())
-    @include('partials.page-header')
-    @include('partials.content-page')
+    <div class="row">
+      <div class="col-lg-3 col-sm-4">
+        <div class="module module-section-title">
+          @php(the_title())
+        </div>
+      </div>
+      <div class="col-lg-6 col-sm-8">
+        <div class="module module-content" id="page-content">
+          @include('partials.content-page')
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="module">
+          @include('partials.sidebar')
+        </div>
+      </div>
+    </div>
   @endwhile
 @endsection
