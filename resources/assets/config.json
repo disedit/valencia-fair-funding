@@ -6,6 +6,11 @@
     ],
     "customizer": [
       "./scripts/customizer.js"
+    ],
+    "fontawesome": [
+      "./scripts/fontawesome/fontawesome.js",
+      "./scripts/fontawesome/packs/regular.js",
+      "./scripts/fontawesome/packs/brands.js"
     ]
   },
   "publicPath": "/wp-content/themes/fair-funding",
