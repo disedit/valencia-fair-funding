@@ -1,5 +1,29 @@
-.module-articles {
+.articles {
+  background: $white;
+}
+
+.module-articles-title {
   background: $pink;
   color: $white;
-  height: 300px;
+  width: 100%;
+
+  h2 {
+    margin-bottom: 0;
+  }
+}
+
+.module-articles {
+  background: $white;
+
+  a {
+    color: $pink;
+
+    a:hover {
+      color: darken($pink, 20%);
+    }
+  }
+
+  .post {
+    background: $yellow;
+  }
 }
