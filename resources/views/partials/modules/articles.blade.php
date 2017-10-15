@@ -1,7 +1,7 @@
 <div class="row">
-  <div class="col-lg-3">
-    <div class="module module-articles">
-      <div class="module-icon">
+  <div class="col-lg-3 col-md-4 d-flex align-items-stretch">
+    <div class="module module-articles-title">
+      <div class="module-icon d-none d-md-block">
         <i class="far fa-file-alt" aria-hidden="true"></i>
       </div>
       <div class="module-content">
@@ -11,18 +11,13 @@
       </div>
     </div>
   </div>
-  <div class="col-lg-9">
-    Articles
+  <div class="col-lg-9 col-md-8 articles">
+    <div class="module module-articles">
+      <div class="module-content d-flex">
+        @while (have_posts()) @php(the_post())
+          @include('partials.content-'.get_post_type())
+        @endwhile
+      </div>
+    </div>
   </div>
 </div>
-
-@if (!have_posts())
-  <div class="alert alert-warning">
-    {{ __('Sorry, no results were found.', 'sage') }}
-  </div>
-  {!! get_search_form(false) !!}
-@endif
-
-@while (have_posts()) @php(the_post())
-  @include('partials.content-'.get_post_type())
-@endwhile
