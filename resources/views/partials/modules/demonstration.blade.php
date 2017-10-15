@@ -1,8 +1,7 @@
 @php
-  $demonstration = get_page_by_path('manifestacio');
-  $pageInCurrentLanguage = pll_get_post($demonstration->ID);
-  $permalink = get_permalink($pageInCurrentLanguage);
+  $permalink = App::getPermalinkInLanguage('manifest');
 @endphp
+
 <div class="module module-demonstration">
   <div class="module-content">
     <h2>{{ __('Manifestació', 'fair-funding') }}</h2>

@@ -9,7 +9,9 @@
       </div>
       <div class="module-content">
         <div class="module-header">
-          <h2><i class="far fa-file-alt" aria-hidden="true"></i> {{ __('Notes de premsa', 'fair-funding') }}</h2>
+          <a href="{{ App::getPermalinkInLanguage('premsa') }}">
+            <h2><i class="far fa-file-alt" aria-hidden="true"></i> {{ __('Notes de premsa', 'fair-funding') }}</h2>
+          </a>
         </div>
       </div>
     </div>

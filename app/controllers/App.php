@@ -30,4 +30,13 @@ class App extends Controller
         }
         return get_the_title();
     }
+
+    public static function getPermalinkInLanguage($slug)
+    {
+      $page = get_page_by_path($slug);
+      $pageInCurrentLanguage = pll_get_post($page->ID);
+      $permalink = get_permalink($pageInCurrentLanguage);
+
+      return $permalink;
+    }
 }
