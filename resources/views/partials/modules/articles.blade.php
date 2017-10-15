@@ -1,3 +1,6 @@
+@php
+  query_posts('posts_per_page=4');
+@endphp
 <div class="row">
   <div class="col-lg-3 col-md-4 d-flex align-items-stretch">
     <div class="module module-articles-title">
@@ -13,11 +16,16 @@
   </div>
   <div class="col-lg-9 col-md-8 articles">
     <div class="module module-articles">
-      <div class="module-content d-flex">
-        @while (have_posts()) @php(the_post())
-          @include('partials.content-'.get_post_type())
-        @endwhile
+      <div class="module-content">
+        <div class="row">
+          @php($i = 0) @while (have_posts()) @php(the_post()) @php($i++)
+            <a href="{{ get_permalink() }}" class="col-sm-4 col-md-3 article-item article-{{ $i }}">
+              @include('partials.content-'.get_post_type())
+            </a>
+          @endwhile
+        </div>
       </div>
     </div>
   </div>
 </div>
+@php(wp_reset_query())
