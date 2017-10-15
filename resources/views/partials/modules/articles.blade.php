@@ -21,9 +21,7 @@
       <div class="module-content">
         <div class="row">
           @php($i = 0) @while (have_posts()) @php(the_post()) @php($i++)
-            <a href="{{ get_permalink() }}" class="col-sm-4 col-md-3 article-item article-{{ $i }}">
-              @include('partials.content-'.get_post_type())
-            </a>
+            @include('partials.content-'.get_post_type())
           @endwhile
         </div>
       </div>
