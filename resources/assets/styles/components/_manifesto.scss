@@ -1,6 +1,14 @@
 .manifesto {
   background: $gray-100;
 
+  &-title {
+    color: $dark-color;
+
+    &:hover {
+      color: $dark-color;
+    }
+  }
+
   &-signatures {
     display: block;
     text-align: right;
