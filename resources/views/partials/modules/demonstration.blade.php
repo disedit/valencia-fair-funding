@@ -40,3 +40,4 @@
     </ul>
   </div>
 </div>
+<div id="demonstrationMap" class="demonstration-map d-none d-sm-block" aria-hidden="true"></div>

@@ -66,6 +66,15 @@
   }
 }
 
+.demonstration-map {
+  height: 300px;
+  background: $gray-200;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 @include media-breakpoint-up(md) {
   .module-demonstration {
     li {
