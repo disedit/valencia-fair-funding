@@ -1,5 +1,9 @@
 export default {
   init() {
+
+    /**
+     * Big input's focus/blur functionality
+     */
     $(".main-input input").on('focus', function() {
       $(this).parent().addClass('main-input-active');
     });
@@ -10,17 +14,26 @@ export default {
       }
     });
 
+    /**
+     * Header change on scroll
+     */
     $(window).bind('scroll', function(){
       $(".hashtag").toggleClass('elem-hidden',$(this).scrollTop() <= 200);
       $(".organizers").toggleClass('elem-hidden',$(this).scrollTop() > 200);
       $(".top").toggleClass('top-shadow',$(this).scrollTop() > 1);
     });
 
+    /**
+     * Mobile menu toggle
+     */
     $(".menu-trigger a").on('click', function(e) {
       e.preventDefault();
       $(".menu").toggleClass('menu-slided');
     });
 
+    /**
+     * Load some pages on modals
+     */
     $(".load-modal").on('click', function(e) {
       e.preventDefault();
 
@@ -28,7 +41,7 @@ export default {
       const container = $(this).data('container');
       const loadUrl = $(this).attr('href') + ' #' + container;
 
-      $('#pageModal .modal-body').text(modalTitle);
+      $('#pageModal .modal-title').text(modalTitle);
       $('#pageModal .modal-body').load(loadUrl, function() {
         $('#pageModal').modal();
       });

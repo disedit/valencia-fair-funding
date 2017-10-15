@@ -1,3 +1,8 @@
+@php
+  $demonstration = get_page_by_path('manifestacio');
+  $pageInCurrentLanguage = pll_get_post($demonstration->ID);
+  $permalink = get_permalink($pageInCurrentLanguage);
+@endphp
 <div class="module module-demonstration">
   <div class="module-content">
     <h2>{{ __('Manifestació', 'fair-funding') }}</h2>
@@ -8,27 +13,29 @@
 
     <ul>
       <li>
-        <a href="">
+        <a href="{{ $permalink }}" data-title="{{ __('Manifestació 18N', 'fair-funding') }}" data-container="page-content" data-target="venue" class="load-modal">
           <i class="far fa-map-marker-alt"></i>
+          <span class="sr-only">{{ __('Lloc', 'fair-funding') }}</span>
           <span>Plaça Sant Agustí</span>
         </a>
       </li>
-      <li>
-        <a href="">
+      <li data-toggle="tooltip" data-placement="left" title="{{ __('Afegeix al meu calendari', 'fair-funding') }}">
+        <a href="{{ $permalink }}" data-title="{{ __('Manifestació 18N', 'fair-funding') }}" data-container="page-content" data-target="event" class="load-modal">
           <i class="far fa-clock"></i>
+          <span class="sr-only">{{ __('Hora', 'fair-funding') }}</span>
           <span>12:00</span>
         </a>
       </li>
       <li>
-        <a href="">
+        <a href="{{ $permalink }}" data-title="{{ __('Manifestació 18N', 'fair-funding') }}" data-container="page-content" data-target="transport" class="load-modal">
           <i class="far fa-bus"></i>
-          <span>Transport</span>
+          <span>{{ __('Transport', 'fair-funding') }}</span>
         </a>
       </li>
       <li>
-        <a href="">
+        <a href="{{ $permalink }}" data-title="{{ __('Manifestació 18N', 'fair-funding') }}" data-container="page-content" data-target="more" class="load-modal">
           <i class="far fa-info-circle"></i>
-          <span>Més info</span>
+          <span>{{ __('Més informació', 'fair-funding') }}</span>
         </a>
       </li>
     </ul>

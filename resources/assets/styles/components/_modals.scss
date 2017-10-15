@@ -1,6 +1,7 @@
 .modal-header,
 .modal-footer {
   border: 0;
+  padding: 2rem 2rem 0;
 }
 
 .modal-content {
@@ -10,4 +11,10 @@
 .modal-title {
   color: theme-color("primary");
   font-size: 1.75rem;
+}
+
+.modal {
+  .module-content {
+    padding: 0 1rem 1rem;
+  }
 }
