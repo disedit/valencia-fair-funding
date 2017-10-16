@@ -9,7 +9,23 @@
 
     <p class="module-text">{{ __('Lorem ipsum', 'fair-funding') }}</p>
 
-    <form>
+    <hr />
+
+    <div class="mb-2">
+      <label class="custom-control custom-radio">
+        <input id="type1" name="type" type="radio" class="custom-control-input" checked="checked">
+        <span class="custom-control-indicator"></span>
+        <span class="custom-control-description">Individual</span>
+      </label>
+      <label class="custom-control custom-radio">
+        <input id="type2" name="type" type="radio" class="custom-control-input">
+        <span class="custom-control-indicator"></span>
+        <span class="custom-control-description">Entitat</span>
+      </label>
+    </div>
+
+    <form action="{{ esc_url(admin_url('admin-post.php')) }}" method="post">
+      <input type="hidden" name="action" value="sign">
       <div class="form-group main-input">
         <label for="name">{{ __('Nom i cognoms', 'fair-funding') }}</label>
         <input type="text" class="form-control form-control-lg" id="name">
@@ -18,12 +34,12 @@
         <label for="email">{{ __('E-mail', 'fair-funding') }}</label>
         <input type="email" class="form-control form-control-lg" id="email">
       </div>
-      <label class="custom-control custom-checkbox">
+      <label class="custom-control custom-checkbox mt-2">
         <input type="checkbox" class="custom-control-input">
         <span class="custom-control-indicator"></span>
         <span class="custom-control-description">Afegeix el meu nom al llistat públic</span>
       </label>
-      <button type="button" class="btn btn-primary btn-block btn-lg">Signa</button>
+      <button type="submit" class="btn btn-primary btn-block btn-lg">Signa</button>
     </form>
   </div>
 </div>
