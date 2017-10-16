@@ -26,7 +26,7 @@
       </div>
       <div class="col-lg-3 sidebar">
         <div class="module">
-          @include('partials.sidebar')
+          @include('partials.modules.demonstration')
         </div>
       </div>
     </div>
