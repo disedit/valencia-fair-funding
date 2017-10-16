@@ -3,7 +3,15 @@
     <h1 class="entry-title">{{ get_the_title() }}</h1>
     @include('partials/entry-meta')
   </header>
+  <div class="entry-share">
+    <div class="fb-like" data-href="http://financamentjust.com" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="dfgfdg" data-url="http://fincancamentjust.com" data-hashtags="FinançamentJust" data-show-count="false">Tweet</a>
+  </div>
   <div class="entry-content">
+    <div class="thumbnail">
+      @php(the_post_thumbnail())
+    </div>
+
     @php(the_content())
   </div>
   <footer>

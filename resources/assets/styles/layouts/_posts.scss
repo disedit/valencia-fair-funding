@@ -1,4 +1,35 @@
-.post-content {
+.post {
+  time {
+    color: $gray-600;
+  }
+}
+
+.single .entry-title {
+  color: $dark-color;
+}
+
+.entry-share {
+  position: relative;
+  margin: 2rem 0 0;
+  padding-top: 1rem;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    border-top: 3px $dark-color solid;
+  }
+
+  .fb-like {
+    top: -7px;
+  }
+}
+
+.post-content,
+.entry-content {
   p,
   li {
     font-size: 1.1rem;
@@ -8,6 +39,15 @@
 
   p:first-child {
     margin-top: 0;
+  }
+}
+
+.thumbnail {
+  margin: 2rem -2rem 2rem -2rem;
+
+  img {
+    width: 100%;
+    height: auto;
   }
 }
 
