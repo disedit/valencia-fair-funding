@@ -18,8 +18,8 @@ export default {
      * Header change on scroll
      */
     $(window).bind('scroll', function(){
-      $(".hashtag").toggleClass('elem-hidden',$(this).scrollTop() <= 200);
-      $(".organizers").toggleClass('elem-hidden',$(this).scrollTop() > 200);
+      $(".second-hashtag").toggleClass('elem-hidden',$(this).scrollTop() <= 200);
+      $(".first-hashtag").toggleClass('elem-hidden',$(this).scrollTop() > 200);
       $(".top").toggleClass('top-shadow',$(this).scrollTop() > 1);
     });
 
