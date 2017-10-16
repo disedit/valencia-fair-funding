@@ -76,6 +76,10 @@
 }
 
 @include media-breakpoint-up(md) {
+  .demonstration {
+    padding-bottom: 300px;
+  }
+
   .module-demonstration {
     li {
       border-top: 2px $teal solid;
