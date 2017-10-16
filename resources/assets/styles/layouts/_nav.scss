@@ -44,46 +44,6 @@
   }
 }
 
-.organizers {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  opacity: 1;
-  transition: opacity 0.2s ease-in-out;
-
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-
-  li {
-    display: inline-block;
-    list-style: none;
-
-    img {
-      filter: #{"grayscale(#{1})"};
-      opacity: 0.75;
-      height: 30px;
-      transition: 0.2s ease-in;
-
-      &:hover {
-        filter: #{"grayscale(#{0})"};
-        opacity: 1;
-      }
-    }
-  }
-
-  .ccoo img {
-    margin-left: 10px;
-    height: 23px;
-  }
-
-  .podemos img {
-    height: 14px;
-    margin-left: 10px;
-  }
-}
-
 .menu {
   position: absolute;
   top: 1rem;
