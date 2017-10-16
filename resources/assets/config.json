@@ -7,6 +7,9 @@
     "customizer": [
       "./scripts/customizer.js"
     ],
+    "signatures": [
+      "./scripts/signatures.js"
+    ],
     "fontawesome": [
       "./scripts/fontawesome/fontawesome.js",
       "./scripts/fontawesome/packs/regular.js",
