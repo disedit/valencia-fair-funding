@@ -43,3 +43,41 @@
 .manifesto-sidebar {
   background: $teal;
 }
+
+.motion {
+  .attachments {
+    margin-top: 0;
+
+    abbr {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    a {
+      color: $dark-color;
+
+      &:hover {
+        color: darken($dark-color, 20%);
+      }
+    }
+  }
+
+  hr {
+    border-width: 2px;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .manifesto {
+    .manifesto-sidebar {
+      order: 1;
+    }
+
+    .main-column {
+      order: 2;
+    }
+
+    .sidebar {
+      order: 3;
+    }
+  }
+}

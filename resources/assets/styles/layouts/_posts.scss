@@ -75,5 +75,17 @@
 
   li {
     list-style: none;
+    line-height: 2;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  abbr {
+    background: $gray-200;
+    font-size: 0.85rem;
+    padding: 2px 4px;
+    border-radius: 3px;
   }
 }
