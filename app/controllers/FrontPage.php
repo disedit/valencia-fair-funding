@@ -4,7 +4,7 @@ namespace App;
 
 use Sober\Controller\Controller;
 
-class About extends Controller
+class Home extends Controller
 {
-
+  use Signatures;
 }

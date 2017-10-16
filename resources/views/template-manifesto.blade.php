@@ -33,7 +33,7 @@
       <div class="col-lg-3 sidebar">
         <div class="module module-signatures">
           <a href="@php(the_permalink())" class="manifesto-signatures">
-            <span>1</span> <span>2</span> <span>3</span> <span>4</span> signatures
+            {!! $signatures_count_formatted !!} signatures
           </a>
         </div>
       </div>
