@@ -1,3 +1,10 @@
+@import 'sign';
+@import 'share';
+@import 'manifesto';
+@import 'demonstration';
+@import 'articles';
+@import 'contact';
+
 .module {
   position: relative;
   padding: 2rem;
@@ -31,13 +38,6 @@
 .module-text {
   margin-top: 2rem;
 }
-
-@import 'sign';
-@import 'share';
-@import 'manifesto';
-@import 'demonstration';
-@import 'articles';
-@import 'contact';
 
 @include media-breakpoint-up(lg) {
   .sign-share {

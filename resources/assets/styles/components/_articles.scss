@@ -3,16 +3,16 @@
 }
 
 .module-articles-title {
-  background: $pink;
-  color: $white;
+  background: $white;
   width: 100%;
 
   h2 {
     margin-bottom: 0;
+    font-size: 1.25rem;
   }
 
   a {
-    color: $white;
+    color: $pink;
   }
 
   .module-content {
@@ -90,5 +90,19 @@
     bottom: 1rem;
     right: 1rem;
     color: $dark-color;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .module-articles-title {
+    background: $pink;
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    a {
+      color: $white;
+    }
   }
 }
