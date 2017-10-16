@@ -15,14 +15,15 @@
         <a href="{{ $permalink }}" data-title="{{ __('Manifestació 18N', 'fair-funding') }}" data-container="page-content" data-target="venue" class="load-modal">
           <i class="far fa-map-marker-alt"></i>
           <span class="sr-only">{{ __('Lloc', 'fair-funding') }}</span>
-          <span>Plaça Sant Agustí</span>
+          <span>Explanada MuVIM</span>
+          <span>Guillem de Castro</span>
         </a>
       </li>
       <li data-toggle="tooltip" data-placement="left" title="{{ __('Afegeix al meu calendari', 'fair-funding') }}">
         <a href="{{ $permalink }}" data-title="{{ __('Manifestació 18N', 'fair-funding') }}" data-container="page-content" data-target="event" class="load-modal">
           <i class="far fa-clock"></i>
           <span class="sr-only">{{ __('Hora', 'fair-funding') }}</span>
-          <span>12:00</span>
+          <span>18:00</span>
         </a>
       </li>
       <li>
