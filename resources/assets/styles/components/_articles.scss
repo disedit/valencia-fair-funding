@@ -96,6 +96,7 @@
 @include media-breakpoint-up(sm) {
   .module-articles-title {
     background: $pink;
+    color: $white;
 
     h2 {
       font-size: 2rem;
