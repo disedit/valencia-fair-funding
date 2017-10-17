@@ -5,7 +5,7 @@
 <div class="module module-demonstration">
   <div class="module-content">
     <h2>{{ __('Manifestació', 'fair-funding') }}</h2>
-
+    <h3>València</h3>
     <div class="date">
       18N
     </div>
@@ -15,7 +15,7 @@
         <a href="{{ $permalink }}" data-title="{{ __('Manifestació 18N', 'fair-funding') }}" data-container="page-content" data-target="venue" class="load-modal">
           <i class="far fa-map-marker-alt"></i>
           <span class="sr-only">{{ __('Lloc', 'fair-funding') }}</span>
-          <span>Explanada MuVIM</span>
+          <span class="secondary">Explanada MuVIM</span>
           <span>Guillem de Castro</span>
         </a>
       </li>
