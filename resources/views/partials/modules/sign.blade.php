@@ -29,12 +29,12 @@
 
       <div class="form-group main-input">
         <label for="name"><span class="visible-individual">{{ __('Nom i cognoms', 'fair-funding') }}</span> <span class="sr-only">o</span> <span class="visible-organization" style="display: none">{{ __('Nom de la entitat', 'fair-funding') }}</span></label>
-        <input type="text" class="form-control form-control-lg" id="name" name="name" aria-describedby="nameHelp">
+        <input type="text" class="form-control form-control-lg" id="name" name="name" aria-describedby="nameHelp" required>
         <small id="nameHelp" class="sr-only"></small>
       </div>
       <div class="form-group main-input">
         <label for="email">{{ __('E-mail', 'fair-funding') }}</label>
-        <input type="email" class="form-control form-control-lg" id="email" name="email" aria-describedby="emailHelp">
+        <input type="email" class="form-control form-control-lg" id="email" name="email" aria-describedby="emailHelp" required>
         <small id="emailHelp" class="sr-only"></small>
       </div>
       <label class="custom-control custom-checkbox mt-2">
@@ -49,7 +49,7 @@
     </form>
 
     <div id="signSuccess" style="display: none;">
-      <div class="card text-white bg-info mb-3" style="max-width: 20rem;">
+      <div class="card text-white bg-info">
         <div class="card-body">
           <h4 class="card-title"><i class="far fa-thumbs-up"></i> {{ __('Gràcies', 'fair-funding') }}</h4>
           <p class="card-text">{{ __('Lorem ipsum gracies signar', 'fair-funding') }}</p>

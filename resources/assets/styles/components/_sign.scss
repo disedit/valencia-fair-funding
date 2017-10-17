@@ -17,3 +17,13 @@
     }
   }
 }
+
+.card.bg-info {
+  .btn:hover {
+    color: $dark-color;
+  }
+
+  .svg-inline--fa {
+    margin-left: 10px;
+  }
+}
