@@ -27,7 +27,45 @@ add_action('customize_preview_init', function () {
  * Handle signature post
  */
 function add_signature() {
-  
+  global $wpdb;
+
+  $response = array('status' => 'OK', 'errors' => array());
+
+  $type = (isset($_POST['type'])) ? $_POST['type'] : 'individual';
+  $name = (isset($_POST['name'])) ? $_POST['name'] : false;
+  $email = (isset($_POST['email'])) ? $_POST['email'] : false;
+  $is_public = (isset($_POST['is_public'])) ? $_POST['is_public'] : 0;
+
+  // Type validation
+  if(!in_array($type, array('individual', 'organization'))) {
+    $response['status'] = 'error';
+    $response['errors'][] = array('input' => 'type', 'message' => __('Camp Tipus invalid', 'fair-funding'));
+  }
+
+  // Name validation
+  $name = filter_var($name, FILTER_SANITIZE_STRING);
+  if(empty($name)) {
+    $response['status'] = 'error';
+    $response['errors'][] = array('input' => 'name', 'message' => __('Has d\'escriure un nom', 'fair-funding'));
+  }
+
+  // E-mail validation
+  $email = filter_var($email, FILTER_VALIDATE_EMAIL);
+  if(!$email) {
+    $response['status'] = 'error';
+    $response['errors'][] = array('input' => 'email', 'message' => __('Has d\'escriure un e-mail valid', 'fair-funding'));
+  }
+
+  // is_public can only be 1 or 0
+  $is_public = ($is_public == 1) ? 1 : 0;
+
+  // Insert signature
+  if(empty($response['errors'])) {
+    $query = $wpdb->prepare("INSERT INTO signatures (`type`, `name`, `email`, `is_public`) VALUES (%s, %s, %s, %d)", $type, $name, $email, $is_public);
+    $wpdb->query($query);
+  }
+
+  echo json_encode($response);
 }
 
 add_action('admin_post_nopriv_sign', 'App\add_signature');

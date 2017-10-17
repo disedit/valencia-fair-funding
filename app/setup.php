@@ -11,9 +11,9 @@ use Roots\Sage\Template\BladeProvider;
  * Theme assets
  */
 add_action('wp_enqueue_scripts', function () {
-    wp_enqueue_style('sage/main.css', asset_path('styles/main.css'), false, null);
-    wp_enqueue_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
-    wp_enqueue_script('sage/fontawesome.js', asset_path('scripts/fontawesome.js'), null, null, false);
+    wp_enqueue_style('fair-funding/main.css', asset_path('styles/main.css'), false, null);
+    wp_enqueue_script('fair-funding/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
+    wp_enqueue_script('fair-funding/fontawesome.js', asset_path('scripts/fontawesome.js'), null, null, false);
 }, 100);
 
 /**
