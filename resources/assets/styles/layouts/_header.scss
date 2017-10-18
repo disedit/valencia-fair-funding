@@ -31,12 +31,12 @@
 
     .map-holder {
       position: absolute;
-      right: 43px;
+      right: 168px;
       z-index: 20;
     }
 
     img {
-      height: 433px;
+      height: 301px;
     }
   }
 
@@ -60,8 +60,16 @@
   }
 }
 
-.home .banner .map-svg {
-  width: 200px;
+.home .banner {
+  .map-holder {
+    position: absolute;
+    right: 43px;
+    z-index: 20;
+  }
+
+  img {
+    height: 433px;
+  }
 }
 
 .banner .nav li {
@@ -84,8 +92,6 @@
     }
   }
 }
-
-@import 'components/metro';
 
 @include media-breakpoint-up(xl) {
   .banner .claim {
@@ -112,11 +118,25 @@
 @include media-breakpoint-down(lg) {
   .banner .map {
     .map-holder {
-      right: 0;
+      right: 66px;
     }
 
     img {
-      height: 369px;
+      height: 237px;
+    }
+  }
+
+  .home {
+    .banner .map {
+      .map-holder {
+        right: 0;
+      }
+
+      img {
+        height: 369px;
+      }
     }
   }
 }
+
+@import 'components/metro';
