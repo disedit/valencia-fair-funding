@@ -58,7 +58,18 @@
       <div class="col-lg-3 sidebar">
         <div class="module module-signatures">
           <a href="@php(the_permalink())" class="manifesto-signatures">
-            {!! $signatures_count_formatted !!} signatures
+
+
+            <h4>{{ __('Convocants', 'fair-funding') }}</h4>
+            <ul>
+              <li>CCOO País Valencià</li>
+              <li>UGT</li>
+              <li>PSPV-PSOE</li>
+              <li>Compromís</li>
+              <li>Podem</li>
+            </ul>
+
+            <h4>{!! $signatures_count_formatted !!} {{ __('Entitats adhe', 'fair-funding') }}</h4>
           </a>
         </div>
       </div>
