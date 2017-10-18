@@ -1,6 +1,9 @@
 .metro-line {
+  position: relative;
+  z-index: 5;
   margin-top: 3rem;
   margin-bottom: -3rem;
+  margin-right: -4rem;
   animation: slide-up 0.8s ease-out;
   animation-delay: 0.4s;
   animation-fill-mode: forwards;
@@ -21,21 +24,10 @@
       position: absolute;
       top: 40px;
       left: 0;
-      right: 0;
+      right: -10px;
       height: 6px;
       background: $white;
       border-radius: 3px;
-    }
-
-    &::after {
-      content: '';
-      display: block;
-      background: linear-gradient(to right, rgba(68, 73, 88, 0), $dark-color);
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      width: 200px;
     }
   }
 
@@ -52,8 +44,16 @@
       width: 20px;
       height: 20px;
       background: $white;
-      border: 4px $dark-color solid;
+      border: 4px $blue solid;
       border-radius: 20px;
+    }
+
+    &:last-child {
+      padding-right: 6rem;
+
+      &::after {
+        display: none;
+      }
     }
   }
 

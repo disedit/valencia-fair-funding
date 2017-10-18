@@ -8,5 +8,6 @@
     <li><div class="icon"><i class="far fa-microchip"></i></div> <span>Investigació</span></li>
     <li><div class="icon"><i class="far fa-handshake"></i></div> <span>Justícia social</span></li>
     <li><div class="icon"><i class="far fa-train"></i></div> <span>Vertebració</span></li>
+    <li></li>
   </ul>
 </div>

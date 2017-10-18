@@ -1,16 +1,19 @@
 .banner {
   margin-top: 62px;
 
-  .claim,
-  .map {
-    padding: 2rem;
-  }
-
   .claim {
     padding: 4rem 2rem;
-    background: $dark-color;
+    background-color: $blue;
+    background-image: url(../../images/header-part1.png);
+    background-position: right 100px top;
+    background-repeat: no-repeat;
     color: #fff;
     text-align: center;
+
+    h1 {
+      position: relative;
+      z-index: 10;
+    }
 
     a {
       color: $white;
@@ -22,15 +25,19 @@
   }
 
   .map {
-    padding: 2rem;
-    background: $blue;
+    background: $teal;
     text-align: center;
     width: 125px;
-  }
 
-  .map-svg {
-    width: 125px;
-    margin: 0 auto;
+    .map-holder {
+      position: absolute;
+      right: 43px;
+      z-index: 20;
+    }
+
+    img {
+      height: 433px;
+    }
   }
 
   .upper-slogan {
@@ -83,5 +90,33 @@
 @include media-breakpoint-up(xl) {
   .banner .claim {
     padding: 6rem 4rem;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .claim {
+    &::after {
+      content: '';
+      display: block;
+      background: linear-gradient(to right, rgba(49, 112, 157, 0), $blue);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 200px;
+      z-index: 5;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .banner .map {
+    .map-holder {
+      right: 0;
+    }
+
+    img {
+      height: 369px;
+    }
   }
 }
