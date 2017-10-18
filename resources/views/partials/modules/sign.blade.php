@@ -30,12 +30,17 @@
       <div class="form-group main-input">
         <label for="name"><span class="visible-individual">{{ __('Nom i cognoms', 'fair-funding') }}</span> <span class="sr-only">o</span> <span class="visible-organization" style="display: none">{{ __('Nom de la entitat', 'fair-funding') }}</span></label>
         <input type="text" class="form-control form-control-lg" id="name" name="name" aria-describedby="nameHelp" required>
-        <small id="nameHelp" class="sr-only"></small>
+        <small id="nameHelp" class="invalid-feedback"></small>
+      </div>
+      <div class="form-group main-input">
+        <label for="nif"><span class="visible-individual">{{ __('DNI/NIE', 'fair-funding') }}</span> <span class="sr-only">o</span> <span class="visible-organization" style="display: none">{{ __('CIF', 'fair-funding') }}</span></label>
+        <input type="text" class="form-control form-control-lg" id="nif" name="nif" aria-describedby="emailHelp" required>
+        <small id="nifHelp" class="invalid-feedback"></small>
       </div>
       <div class="form-group main-input">
         <label for="email">{{ __('E-mail', 'fair-funding') }}</label>
         <input type="email" class="form-control form-control-lg" id="email" name="email" aria-describedby="emailHelp" required>
-        <small id="emailHelp" class="sr-only"></small>
+        <small id="emailHelp" class="invalid-feedback"></small>
       </div>
       <label class="custom-control custom-checkbox mt-2">
         <input type="checkbox" name="is_public" id="isPublic" value="1" class="custom-control-input">

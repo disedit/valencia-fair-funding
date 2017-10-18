@@ -23,6 +23,8 @@ add_action('customize_preview_init', function () {
     wp_enqueue_script('sage/customizer.js', asset_path('scripts/customizer.js'), ['customize-preview'], null, true);
 });
 
+include 'check-nif.php';
+
 /**
  * Handle signature post
  */
@@ -33,6 +35,7 @@ function add_signature() {
 
   $type = (isset($_POST['type'])) ? $_POST['type'] : 'individual';
   $name = (isset($_POST['name'])) ? $_POST['name'] : false;
+  $nif = (isset($_POST['nif'])) ? $_POST['nif'] : false;
   $email = (isset($_POST['email'])) ? $_POST['email'] : false;
   $is_public = (isset($_POST['is_public'])) ? $_POST['is_public'] : 0;
 
@@ -47,6 +50,13 @@ function add_signature() {
   if(empty($name)) {
     $response['status'] = 'error';
     $response['errors'][] = array('input' => 'name', 'message' => __('Has d\'escriure un nom', 'fair-funding'));
+  }
+
+  // NIF validation
+  $validNif = isValidIdNumber($nif);
+  if(!$validNif) {
+    $response['status'] = 'error';
+    $response['errors'][] = array('input' => 'nif', 'message' => __('El DNI/NIE/CIF introduït no és vàlid.', 'fair-funding'));
   }
 
   // E-mail validation
