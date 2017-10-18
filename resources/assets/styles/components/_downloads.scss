@@ -9,6 +9,34 @@
     }
   }
 
+  .btn {
+    border-width: 3px;
+    text-align: left;
+
+    &:hover {
+      color: $not-pink;
+
+      abbr {
+        border-color: $not-pink;
+      }
+    }
+
+    abbr {
+      display: inline-block;
+      position: relative;
+      top: -2px;
+      background: rgba(255, 255, 255, 0.2);
+      border: 1px rgba(255, 255, 255, 0.2) solid;
+      font-size: 0.75rem;
+      padding: 1px 6px;
+      border-radius: 3px;
+    }
+
+    .svg-inline--fa {
+      margin-right: 0.75rem;
+    }
+  }
+
   a {
     color: $white;
   }

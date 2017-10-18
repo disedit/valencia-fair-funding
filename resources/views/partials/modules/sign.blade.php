@@ -4,10 +4,15 @@
   </div>
   <div class="module-content">
     <div class="module-header">
-      <h2><i class="far fa-pencil-alt" aria-hidden="true"></i> {{ __('Signa', 'fair-funding') }}</h2>
+      <h2>
+        <i class="far fa-pencil-alt" aria-hidden="true"></i> {{ __('Signa', 'fair-funding') }}
+        <a href="@php(the_permalink())" class="manifesto-signatures">
+          {!! $signatures_count_formatted !!}
+        </a>
+      </h2>
     </div>
 
-    <p class="module-text">{{ __('Lorem ipsum', 'fair-funding') }}</p>
+    <p class="module-text">{!! __('Signa en favor d\'un <strong>#FinançamentJust</strong> per al poble valencià.', 'fair-funding') !!}</p>
 
     <hr />
 
@@ -18,7 +23,7 @@
         <label class="custom-control custom-radio">
           <input id="type1" name="type" value="individual" type="radio" class="custom-control-input" checked="checked">
           <span class="custom-control-indicator"></span>
-          <span class="custom-control-description">{{ __('Individual', 'fair-funding') }}</span>
+          <span class="custom-control-description">{{ __('Persona', 'fair-funding') }}</span>
         </label>
         <label class="custom-control custom-radio">
           <input id="type2" name="type" value="organization" type="radio" class="custom-control-input">
@@ -56,8 +61,8 @@
     <div id="signSuccess" style="display: none;">
       <div class="card text-white bg-info">
         <div class="card-body">
-          <h4 class="card-title"><i class="far fa-thumbs-up"></i> {{ __('Gràcies', 'fair-funding') }}</h4>
-          <p class="card-text">{{ __('Lorem ipsum gracies signar', 'fair-funding') }}</p>
+          <div class="icon"><i class="far fa-thumbs-up"></i></div>
+          <h4 class="card-title">{{ __('Gràcies pel teu suport!', 'fair-funding') }}</h4>
           <p class="card-text"><a href="" class="btn btn-outline-light">{{ __('Llistat de signatures', 'fair-funding') }} <i class="far fa-chevron-right"></i></a></p>
         </div>
       </div>

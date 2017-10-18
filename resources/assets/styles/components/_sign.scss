@@ -16,11 +16,40 @@
       background: darken($pink, 10%);
     }
   }
+
+  .manifesto-signatures {
+    display: block;
+    color: theme-color("dark");
+    float: right;
+    font-size: 1.5rem;
+    margin-top: -2px;
+    padding: 5px 15px;
+    border: 3px rgba(0, 0, 0, 0.15) solid;
+    border-radius: 4px;
+
+    &:hover {
+      text-decoration: none;
+      border: 3px rgba(0, 0, 0, 0.4) solid;
+    }
+  }
 }
 
 .card.bg-info {
   .btn:hover {
     color: $dark-color;
+  }
+
+  h4 {
+    margin-bottom: 2rem;
+  }
+
+  .icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+
+    .svg-inline--fa {
+      margin-left: 0;
+    }
   }
 
   .svg-inline--fa {
