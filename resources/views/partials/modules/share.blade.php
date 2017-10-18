@@ -13,5 +13,9 @@
       <li><a href="" class="btn btn-dark btn-facebook btn-lg btn-block"><i class="fab fa-facebook-square"></i> Facebook</a></li>
       <li><a href="" class="btn btn-dark btn-twitter btn-lg btn-block"><i class="fab fa-twitter"></i> Twitter</a></li>
     </ul>
+
+    <hr />
+
+    <a class="twitter-timeline" data-chrome="noheader nofooter noborders transparent noscrollbar" data-height="800"  href="https://twitter.com/hashtag/FinancamentJust" data-widget-id="920645371428245504">#FinancamentJust Tweets</a>
   </div>
 </div>
