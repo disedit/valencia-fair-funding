@@ -83,17 +83,9 @@
   background-image: url('../../images/route.png');
   background-size: cover;
   background-position: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 
 @include media-breakpoint-up(md) {
-  .demonstration {
-    padding-bottom: 300px;
-  }
-
   .module-demonstration {
     li {
       border-top: 2px $teal solid;

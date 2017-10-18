@@ -1,0 +1,15 @@
+.module-downloads {
+  background: $not-pink;
+  color: $white;
+
+  .poster {
+    img {
+      width: 100%;
+      border: 3px $white solid;
+    }
+  }
+
+  a {
+    color: $white;
+  }
+}
