@@ -4,18 +4,7 @@ namespace App;
 
 trait Signatures
 {
-  public function signaturesCountFormatted()
-  {
-    $count = $this->signaturesCount();
-    $numbers = str_split($count);
-    $string = '';
-
-    foreach($numbers as $number) $string .= '<span>' . $number . '</span> ';
-
-    return $string;
-  }
-
-  private function signaturesCount()
+  public function signaturesCount()
   {
     global $wpdb;
     $wpdb->get_results("SELECT id FROM signatures");
@@ -23,19 +12,28 @@ trait Signatures
     return $wpdb->num_rows;
   }
 
-  public static function signatures()
+  public function signaturesCountOrganizations()
   {
     global $wpdb;
-    $signatures = $wpdb->get_results("SELECT * FROM signatures WHERE type = 'individual' AND visible = 1 ORDER BY id DESC");
+    $wpdb->get_results("SELECT id FROM signatures WHERE type = 'organization'");
 
-    return $signatures;
+    return $wpdb->num_rows;
   }
 
-  public static function supportingOrganizations()
+  public function signaturesCountPeople()
   {
     global $wpdb;
-    $supportingOrganizations = $wpdb->get_results("SELECT * FROM signatures WHERE type = 'organization' AND visible = 1 ORDER BY id DESC");
+    $wpdb->get_results("SELECT id FROM signatures WHERE type = 'individual'");
 
-    return $supportingOrganizations;
+    return $wpdb->num_rows;
+  }
+
+  public static function signatures($type, $offset, $limit)
+  {
+    global $wpdb;
+    $query = $wpdb->prepare("SELECT name FROM signatures WHERE type = '%s' AND visible = 1 AND is_public = 1 ORDER BY id DESC LIMIT %d, %d", $type, $offset, $limit);
+    $signatures = $wpdb->get_results($query);
+
+    return $signatures;
   }
 }
