@@ -71,7 +71,7 @@ function add_signature() {
 
   // Insert signature
   if(empty($response['errors'])) {
-    $query = $wpdb->prepare("INSERT INTO signatures (`type`, `name`, `email`, `is_public`) VALUES (%s, %s, %s, %d)", $type, $name, $email, $is_public);
+    $query = $wpdb->prepare("INSERT INTO signatures (`type`, `name`, `nif`, `email`, `is_public`, `visible`) VALUES (%s, %s, %s, %s, %d, '1')", $type, $name, $nif, $email, $is_public);
     $wpdb->query($query);
   }
 
