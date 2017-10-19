@@ -69,7 +69,34 @@
               <li>Podem</li>
             </ul>
 
-            <h4>{!! $signatures_count_formatted !!} {{ __('Entitats adhe', 'fair-funding') }}</h4>
+            {{--
+            <h4>{{ __('Promotors', 'fair-funding') }}</h4>
+            <ul>
+              <li></li>
+            </ul>
+            --}}
+
+            @php
+              $signatures_organizations = TemplateManifesto::signatures('organization', 0, 20);
+            @endphp
+            <h4>{!! $signatures_count_organizations !!} {{ __('entitats adherides', 'fair-funding') }}</h4>
+            <ul>
+              @foreach($signatures_organizations as $organization)
+                <li>{{ $organization->name }}</li>
+              @endforeach
+              <li><a href="">Més...</a></li>
+            </ul>
+
+            @php
+              $signatures_people = TemplateManifesto::signatures('individual', 0, 60);
+            @endphp
+            <h4>{!! $signatures_count_people !!} {{ __('persones adherides', 'fair-funding') }}</h4>
+            <ul>
+              @foreach($signatures_people as $person)
+                <li>{{ $person->name }}</li>
+              @endforeach
+              <li><a href="">Més...</a></li>
+            </ul>
           </a>
         </div>
       </div>
