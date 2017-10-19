@@ -1,5 +1,6 @@
 .module-contact {
   background: $dark-color;
+  padding-bottom: 2rem;
 
   h4 {
     color: $white;
@@ -10,12 +11,14 @@
   }
 
   a {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: $white;
   }
 }
 
 .organizers {
+  margin-bottom: 2rem;
+
   ul {
     margin: 0;
     padding: 0;
@@ -24,20 +27,26 @@
   li {
     display: inline-block;
     list-style: none;
-    margin-right: 10px;
+    margin-right: 20px;
+    margin-bottom: 1rem;
 
     img {
-      opacity: 0.75;
-      height: 50px;
+      height: 40px;
     }
   }
 
   .ccoo img {
-    height: 33px;
+    height: 25px;
   }
 
   .podemos img {
-    height: 24px;
-    margin-left: 10px;
+    height: 18px;
+    margin-left: 0;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .organizers {
+    margin-bottom: 0;
   }
 }
