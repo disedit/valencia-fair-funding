@@ -16,6 +16,8 @@
 
     <hr />
 
-    <a class="twitter-timeline" data-chrome="noheader nofooter noborders transparent noscrollbar" data-height="500"  href="https://twitter.com/hashtag/FinancamentJust" data-widget-id="920645371428245504">#FinancamentJust Tweets</a>
+    <div class="d-none d-lg-block">
+      <a class="twitter-timeline" data-chrome="noheader nofooter noborders transparent noscrollbar" data-height="500"  href="https://twitter.com/hashtag/FinancamentJust" data-widget-id="920645371428245504">#FinancamentJust Tweets</a>
+    </div>
   </div>
 </div>
