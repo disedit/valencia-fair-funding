@@ -42,28 +42,28 @@ function add_signature() {
   // Type validation
   if(!in_array($type, array('individual', 'organization'))) {
     $response['status'] = 'error';
-    $response['errors'][] = array('input' => 'type', 'message' => __('Camp Tipus invalid', 'fair-funding'));
+    $response['errors'][] = array('input' => 'type', 'message' => pll__('Camp Tipus invalid', 'fair-funding'));
   }
 
   // Name validation
   $name = filter_var($name, FILTER_SANITIZE_STRING);
   if(empty($name)) {
     $response['status'] = 'error';
-    $response['errors'][] = array('input' => 'name', 'message' => __('Has d\'escriure un nom', 'fair-funding'));
+    $response['errors'][] = array('input' => 'name', 'message' => pll__('Has d\'escriure un nom', 'fair-funding'));
   }
 
   // NIF validation
   $validNif = isValidIdNumber($nif);
   if(!$validNif) {
     $response['status'] = 'error';
-    $response['errors'][] = array('input' => 'nif', 'message' => __('El DNI/NIE/CIF introduït no és vàlid.', 'fair-funding'));
+    $response['errors'][] = array('input' => 'nif', 'message' => pll__('El DNI/NIE/CIF introduït no és vàlid.', 'fair-funding'));
   }
 
   // E-mail validation
   $email = filter_var($email, FILTER_VALIDATE_EMAIL);
   if(!$email) {
     $response['status'] = 'error';
-    $response['errors'][] = array('input' => 'email', 'message' => __('Has d\'escriure un e-mail valid', 'fair-funding'));
+    $response['errors'][] = array('input' => 'email', 'message' => pll__('Has d\'escriure un e-mail valid', 'fair-funding'));
   }
 
   // is_public can only be 1 or 0

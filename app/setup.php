@@ -41,7 +41,7 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
      */
     register_nav_menus([
-        'primary_navigation' => __('Primary Navigation', 'sage')
+        'primary_navigation' => pll__('Primary Navigation', 'fair-funding')
     ]);
 
     /**
@@ -80,11 +80,11 @@ add_action('widgets_init', function () {
         'after_title'   => '</h3>'
     ];
     register_sidebar([
-        'name'          => __('Primary', 'sage'),
+        'name'          => pll__('Primary', 'fair-funding'),
         'id'            => 'sidebar-primary'
     ] + $config);
     register_sidebar([
-        'name'          => __('Footer', 'sage'),
+        'name'          => pll__('Footer', 'fair-funding'),
         'id'            => 'sidebar-footer'
     ] + $config);
 });
@@ -127,5 +127,3 @@ add_action('after_setup_theme', function () {
         return "<?= " . __NAMESPACE__ . "\\asset_path({$asset}); ?>";
     });
 });
-
-load_theme_textdomain('fair-funding', templatepath.'/languages' );

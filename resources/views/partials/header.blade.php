@@ -5,8 +5,8 @@
     <div class="claim col-lg-9">
       <a href="{{ pll_home_url() }}">
         <h1>
-          <span class="upper-slogan">{{ __('Per un', 'fair-funding') }}</span>
-          <span class="main-slogan">{{ __('Finançament Just', 'fair-funding') }}</span>
+          <span class="upper-slogan"><?php pll_e('Per un', 'fair-funding') ?></span>
+          <span class="main-slogan"><?php pll_e('Finançament Just', 'fair-funding') ?></span>
         </h1>
       </a>
 

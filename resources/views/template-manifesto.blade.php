@@ -17,7 +17,7 @@
             </div>
 
             <div class="attachments">
-              <h4>{{ __('Documents adjunts', 'fair-funding') }}</h4>
+              <h4><?php pll_e('Documents adjunts', 'fair-funding') ?></h4>
               <ul>
                 <li><a href=""><i class="far fa-file"></i> Manifest en valencià <abbr>PDF</abbr></a></li>
                 <li><a href=""><i class="far fa-file"></i> Manifiesto en castellano <abbr>PDF</abbr></a></li>
@@ -33,20 +33,32 @@
         <div class="module module-page-title motion">
           <div class="module-content">
             <div class="d-none d-sm-block">
-              <h2>{{ __('Adhereix-te', 'fair-funding') }}</h2>
-              <p>{!! __('Signa en favor d\'un <strong>#FinançamentJust</strong> per al poble valencià.', 'fair-funding') !!}</p>
+              <h2><?php pll_e('Adhereix-te', 'fair-funding') ?></h2>
+              <p><?php pll_e('Signa en favor d\'un <strong>#FinançamentJust</strong> per al poble valencià.', 'fair-funding') ?></p>
               <a href="#sign" class="btn btn-lg btn-primary btn-sign btn-block"><i class="far fa-pencil-alt"></i> Signa el manifest</a>
             </div>
 
             <hr class="my-4" />
 
-            <h2>{{ __('Moció', 'fair-funding') }}</h2>
+            <h2><?php pll_e('Moció', 'fair-funding') ?></h2>
 
             <div class="attachments">
-              <p>{{ __('Descarrega la moció...', 'fair-funding') }} </p>
+              <p><?php pll_e('Descarrega la moció...', 'fair-funding') ?></p>
               <ul>
                 <li><a href=""><i class="far fa-file-alt"></i> Moció en valencià <abbr>PDF</abbr></a></li>
                 <li><a href=""><i class="far fa-file-alt"></i> Moción en castellano <abbr>PDF</abbr></a></li>
+              </ul>
+            </div>
+
+            <hr class="my-4" />
+
+            <h2><?php pll_e('Pamflet', 'fair-funding') ?></h2>
+
+            <div class="attachments">
+              <p><?php pll_e('Descarrega el pamflet...', 'fair-funding') ?></p>
+              <ul>
+                <li><a href=""><i class="far fa-file-alt"></i> Pamflet en valencià <abbr>PDF</abbr></a></li>
+                <li><a href=""><i class="far fa-file-alt"></i> Panfleto en castellano <abbr>PDF</abbr></a></li>
               </ul>
             </div>
           </div>
@@ -58,7 +70,7 @@
       </div>
       <div class="col-lg-3 sidebar">
         <div class="module module-signatures">
-            <h4>{{ __('Convocants', 'fair-funding') }}</h4>
+            <h4><?php pll_e('Convocants', 'fair-funding') ?></h4>
             <ul>
               <li>CCOO País Valencià</li>
               <li>UGT</li>
@@ -68,7 +80,7 @@
             </ul>
 
             {{--
-            <h4>{{ __('Promotors', 'fair-funding') }}</h4>
+            <h4>{{ pll_e('Promotors', 'fair-funding') }}</h4>
             <ul>
               <li></li>
             </ul>
@@ -77,23 +89,23 @@
             @php
               $signatures_organizations = TemplateManifesto::signatures('organization', 0, 20);
             @endphp
-            <h4>{!! $signatures_count_organizations !!} {{ __('entitats adherides', 'fair-funding') }}</h4>
+            <h4>{!! $signatures_count_organizations !!} <?php pll_e('entitats adherides', 'fair-funding') ?></h4>
             <ul>
               @foreach($signatures_organizations as $organization)
                 <li>{{ $organization->name }}</li>
               @endforeach
-              <li class="more"><a href=""><i class="far fa-plus-circle"></i> Més...</a></li>
+              <li class="more"><a href=""><i class="far fa-plus-circle"></i> <?php pll_e('Més...', 'fair-funding'); ?></a></li>
             </ul>
 
             @php
               $signatures_people = TemplateManifesto::signatures('individual', 0, 60);
             @endphp
-            <h4>{!! $signatures_count_people !!} {{ __('persones adherides', 'fair-funding') }}</h4>
+            <h4>{!! $signatures_count_people !!} <?php pll_e('persones adherides', 'fair-funding') ?></h4>
             <ul>
               @foreach($signatures_people as $person)
                 <li>{{ $person->name }}</li>
               @endforeach
-              <li class="more"><a href=""><i class="far fa-plus-circle"></i> Més...</a></li>
+              <li class="more"><a href=""><i class="far fa-plus-circle"></i> <?php pll_e('Més...', 'fair-funding'); ?></a></li>
             </ul>
           </a>
         </div>

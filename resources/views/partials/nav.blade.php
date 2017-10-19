@@ -24,10 +24,10 @@
             <a href="">Contacta</a>
           </li>
           <li>
-            <div class="fb-like" data-href="http://financamentjust.com" data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="false"></div>
+            <div class="fb-like" data-href="{{ home_url('/') }}" data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="false"></div>
           </li>
           <li>
-            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="dfgfdg" data-url="http://fincancamentjust.com" data-hashtags="FinançamentJust" data-show-count="false">Tweet</a>
+            <a href="https://twitter.com/share?ref_src={{ home_url('/') }}" class="twitter-share-button" data-size="large" data-text="<?php pll_e('Tweet', 'fair-funding') ?>" data-url="{{ home_url('/') }}" data-hashtags="FinançamentJust" data-show-count="false">Tweet</a>
           </li>
           @php(pll_the_languages())
         </ul>

@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-md-6">
       <div class="organizers">
-        <h4>{{ __('Organitzen', 'fair-funding') }}</h4>
+        <h4><?php pll_e('Organitzen', 'fair-funding') ?></h4>
         <ul>
           <li class="ugt"><a href="http://www.ugt-pv.es" target="_blank" rel="noopener"><img src="@asset('images/ugt.bw.png')" alt="UGT" /></a></li>
           <li class="ccoo"><a href="http://www.pv.ccoo.es/" target="_blank" rel="noopener"><img src="@asset('images/ccoo.bw.png')" alt="CCOO" /></a></li>
@@ -14,7 +14,7 @@
     </div>
     <div class="col-md-6">
       <div class="info">
-        <h4>{{ __('Contacta', 'fair-funding') }}</h4>
+        <h4><?php pll_e('Contacta', 'fair-funding') ?></h4>
         <a href="">info@finançamentjust.com</a>
       </div>
     </div>
