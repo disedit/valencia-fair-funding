@@ -3,7 +3,7 @@
   z-index: 5;
   margin-top: 3rem;
   margin-bottom: -3rem;
-  margin-right: -4rem;
+  margin-right: -2rem;
   animation: slide-up 0.8s ease-out;
   animation-delay: 0.4s;
   animation-fill-mode: forwards;
@@ -70,5 +70,11 @@
     top: 0;
     right: 10px;
     opacity: 0.75;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .metro-line {
+    margin-right: -4rem;
   }
 }
