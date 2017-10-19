@@ -1,5 +1,5 @@
 @php
-  $permalink = App::getPermalinkInLanguage('manifest');
+  $permalink = App::getPermalinkInLanguage('manifestacio');
 @endphp
 
 <div class="module module-demonstration">

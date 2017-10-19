@@ -57,9 +57,6 @@
       </div>
       <div class="col-lg-3 sidebar">
         <div class="module module-signatures">
-          <a href="@php(the_permalink())" class="manifesto-signatures">
-
-
             <h4>{{ __('Convocants', 'fair-funding') }}</h4>
             <ul>
               <li>CCOO País Valencià</li>

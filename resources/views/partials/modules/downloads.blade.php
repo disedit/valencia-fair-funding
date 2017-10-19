@@ -1,12 +1,10 @@
-<div class="module module-downloads d-none d-sm-block">
+<div class="module module-downloads d-none d-md-block">
   <div class="module-icon">
     <i class="far fa-cloud-download-alt" aria-hidden="true"></i>
   </div>
   <div class="module-content">
     <div class="module-header">
-      <a href=".">
-        <h2><i class="far fa-cloud-download-alt" aria-hidden="true"></i> {{ __('Descàrregues', 'fair-funding') }}</h2>
-      </a>
+      <h2><i class="far fa-cloud-download-alt" aria-hidden="true"></i> {{ __('Descàrregues', 'fair-funding') }}</h2>
     </div>
 
     <hr />

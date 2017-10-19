@@ -6,8 +6,8 @@
     <div class="module-header">
       <h2>
         <i class="far fa-pencil-alt" aria-hidden="true"></i> {{ __('Signa', 'fair-funding') }}
-        <a href="@php(the_permalink())" class="manifesto-signatures">
-          {!! $signatures_count_formatted !!}
+        <a href="{{ App::getPermalinkInLanguage('manifest') }}" class="manifesto-signatures">
+          {!! $signatures_count !!}
         </a>
       </h2>
     </div>
