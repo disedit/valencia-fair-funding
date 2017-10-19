@@ -1,5 +1,79 @@
 .demonstration {
   background: $not-pink;
+
+  &-map {
+    height: 300px;
+    margin: 0 auto;
+    background-color: $gray-200;
+    background-image: url('../../images/route.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  &-page {
+    h3 {
+      background: lighten($teal, 50%);
+      margin: 1.5rem -30px 1rem -30px;
+      padding: 7px 31px;
+      font-size: 1.25rem;
+      color: $teal;
+    }
+
+    .map {
+      margin: 10px -31px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .calendar-events {
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        display: inline-block;
+      }
+
+      a {
+        display: block;
+        padding: 0.25rem 0.5rem;
+        margin: 0 0.5rem;
+      }
+    }
+
+    .transport {
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        font-weight: bold;
+        margin: 1rem 0;
+      }
+
+      &-icon {
+        width: 30px;
+      }
+
+      .station {
+        display: inline-block;
+        font-weight: normal;
+        border: 1px $gray-400 solid;
+        padding: 0.25rem 0.5rem;
+        border-radius: 3px;
+      }
+
+      .bus img {
+        margin: 0 0.25rem;
+      }
+    }
+  }
 }
 
 .module-demonstration {
@@ -75,15 +149,6 @@
       font-size: 1.75rem;
     }
   }
-}
-
-.demonstration-map {
-  height: 300px;
-  margin: 0 auto;
-  background-color: $gray-200;
-  background-image: url('../../images/route.png');
-  background-size: cover;
-  background-position: center;
 }
 
 @include media-breakpoint-up(md) {
