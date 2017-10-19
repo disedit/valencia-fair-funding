@@ -46,6 +46,14 @@
 
 .manifesto-sidebar {
   background: $teal;
+
+  .btn {
+    background: $not-pink;
+
+    &:hover {
+      background: darken($not-pink, 10%);
+    }
+  }
 }
 
 .motion {

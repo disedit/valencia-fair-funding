@@ -31,23 +31,24 @@
       </div>
       <div class="col-lg-3 col-sm-4 manifesto-sidebar">
         <div class="module module-page-title motion">
-          <div class="d-none d-sm-block">
-            <h2>Adhereix-te</h2>
-            <div class="mt-4">
+          <div class="module-content">
+            <div class="d-none d-sm-block">
+              <h2>{{ __('Adhereix-te', 'fair-funding') }}</h2>
+              <p>{!! __('Signa en favor d\'un <strong>#FinançamentJust</strong> per al poble valencià.', 'fair-funding') !!}</p>
               <a href="#sign" class="btn btn-lg btn-primary btn-sign btn-block"><i class="far fa-pencil-alt"></i> Signa el manifest</a>
             </div>
-          </div>
 
-          <hr class="my-4" />
+            <hr class="my-4" />
 
-          <h2>Moció</h2>
+            <h2>{{ __('Moció', 'fair-funding') }}</h2>
 
-          <div class="attachments">
-            <p>Descarrega la moció que ... </p>
-            <ul>
-              <li><a href=""><i class="far fa-file"></i> Moció en valencià <abbr>PDF</abbr></a></li>
-              <li><a href=""><i class="far fa-file"></i> Moción en castellano <abbr>PDF</abbr></a></li>
-            </ul>
+            <div class="attachments">
+              <p>{{ __('Descarrega la moció...', 'fair-funding') }} </p>
+              <ul>
+                <li><a href=""><i class="far fa-file-alt"></i> Moció en valencià <abbr>PDF</abbr></a></li>
+                <li><a href=""><i class="far fa-file-alt"></i> Moción en castellano <abbr>PDF</abbr></a></li>
+              </ul>
+            </div>
           </div>
         </div>
 
@@ -81,7 +82,7 @@
               @foreach($signatures_organizations as $organization)
                 <li>{{ $organization->name }}</li>
               @endforeach
-              <li><a href="">Més...</a></li>
+              <li class="more"><a href=""><i class="far fa-plus-circle"></i> Més...</a></li>
             </ul>
 
             @php
@@ -92,7 +93,7 @@
               @foreach($signatures_people as $person)
                 <li>{{ $person->name }}</li>
               @endforeach
-              <li><a href="">Més...</a></li>
+              <li class="more"><a href=""><i class="far fa-plus-circle"></i> Més...</a></li>
             </ul>
           </a>
         </div>

@@ -1,0 +1,32 @@
+.module-signatures {
+  h4 {
+    background: lighten($teal, 50%);
+    color: $teal;
+    margin: 0 -3rem 1rem -3rem;
+    padding: 0.5rem 3rem;
+  }
+
+  ul {
+    margin: 0 0 2rem;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    border-bottom: 2px $gray-400 solid;
+    padding: 0.5rem 0;
+  }
+
+  .more a {
+    display: block;
+    text-align: center;
+    padding: 0.5rem;
+    margin: -0.5rem 0;
+    color: $teal;
+
+    &:hover {
+      background: lighten($blue, 65%);
+      text-decoration: none;
+    }
+  }
+}
