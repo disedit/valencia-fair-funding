@@ -43,10 +43,9 @@
             <h2><?php pll_e('Moció', 'fair-funding') ?></h2>
 
             <div class="attachments">
-              <p><?php pll_e('Descarrega la moció...', 'fair-funding') ?></p>
+              <p><?php pll_e('Descarrega la moció que s\'està presentant als ajuntaments.', 'fair-funding') ?></p>
               <ul>
-                <li><a href=""><i class="far fa-file-alt"></i> Moció en valencià <abbr>PDF</abbr></a></li>
-                <li><a href=""><i class="far fa-file-alt"></i> Moción en castellano <abbr>PDF</abbr></a></li>
+                <li><a href="https://xn--finanamentjust-kjb.com/wp-content/uploads/2017/10/Moció-Finançament-Just.doc"><i class="far fa-file-alt"></i> Moció en valencià <abbr>PDF</abbr></a></li>
               </ul>
             </div>
 
@@ -55,10 +54,10 @@
             <h2><?php pll_e('Pamflet', 'fair-funding') ?></h2>
 
             <div class="attachments">
-              <p><?php pll_e('Descarrega el pamflet...', 'fair-funding') ?></p>
+              <p><?php pll_e('Descarrega el pamflet per repartir al carrer.', 'fair-funding') ?></p>
               <ul>
-                <li><a href=""><i class="far fa-file-alt"></i> Pamflet en valencià <abbr>PDF</abbr></a></li>
-                <li><a href=""><i class="far fa-file-alt"></i> Panfleto en castellano <abbr>PDF</abbr></a></li>
+                <li><a href="https://xn--finanamentjust-kjb.com/wp-content/uploads/2017/10/Manifest_finançamentjust.jpg"><i class="far fa-file-alt"></i> Pamflet en valencià <abbr>PDF</abbr></a></li>
+                <li><a href="https://xn--finanamentjust-kjb.com/wp-content/uploads/2017/10/Manifiesto_finançamentjust.jpg"><i class="far fa-file-alt"></i> Panfleto en castellano <abbr>PDF</abbr></a></li>
               </ul>
             </div>
           </div>
@@ -94,7 +93,7 @@
               @foreach($signatures_organizations as $organization)
                 <li>{{ $organization->name }}</li>
               @endforeach
-              <li class="more"><a href=""><i class="far fa-plus-circle"></i> <?php pll_e('Més...', 'fair-funding'); ?></a></li>
+              <li class="more"><a href="/signatures"><i class="far fa-plus-circle"></i> <?php pll_e('Més...', 'fair-funding'); ?></a></li>
             </ul>
 
             @php
@@ -105,7 +104,7 @@
               @foreach($signatures_people as $person)
                 <li>{{ $person->name }}</li>
               @endforeach
-              <li class="more"><a href=""><i class="far fa-plus-circle"></i> <?php pll_e('Més...', 'fair-funding'); ?></a></li>
+              <li class="more"><a href="/signatures"><i class="far fa-plus-circle"></i> <?php pll_e('Més...', 'fair-funding'); ?></a></li>
             </ul>
           </a>
         </div>
