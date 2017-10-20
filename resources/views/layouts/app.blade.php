@@ -7,7 +7,7 @@
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
       js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/ca_ES/sdk.js#xfbml=1&version=v2.10&appId=141021179380419";
+      js.src = "//connect.facebook.net/ca_ES/sdk.js#xfbml=1&version=v2.10&appId=1152084794923594";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 
@@ -25,7 +25,7 @@
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="pageModalTitle">Modal title</h5>
+            <h5 class="modal-title" id="pageModalTitle"></h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
