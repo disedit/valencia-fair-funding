@@ -59,11 +59,23 @@ function add_signature() {
     $response['errors'][] = array('input' => 'nif', 'message' => pll__('El DNI/NIE/CIF introduït no és vàlid.', 'fair-funding'));
   }
 
+  $nifExists = exists('nif', $nif);
+  if($nifExists) {
+    $response['status'] = 'error';
+    $response['errors'][] = array('input' => 'nif', 'message' => pll__('Aquest DNI/NIE/CIF ja ha signat el manifest.', 'fair-funding'));
+  }
+
   // E-mail validation
   $email = filter_var($email, FILTER_VALIDATE_EMAIL);
   if(!$email) {
     $response['status'] = 'error';
     $response['errors'][] = array('input' => 'email', 'message' => pll__('Has d\'escriure un e-mail valid', 'fair-funding'));
+  }
+
+  $emailExists = exists('email', $email);
+  if($emailExists) {
+    $response['status'] = 'error';
+    $response['errors'][] = array('input' => 'email', 'message' => pll__('Aquest e-mail ja es troba al llistat de signatures.', 'fair-funding'));
   }
 
   // is_public can only be 1 or 0
@@ -80,3 +92,12 @@ function add_signature() {
 
 add_action('admin_post_nopriv_sign', 'App\add_signature');
 add_action('admin_post_sign', 'App\add_signature');
+
+function exists($column, $value) {
+  global $wpdb;
+
+  $query = $wpdb->prepare("SELECT COUNT($column) FROM signatures WHERE $column = %s", $value);
+  $exists = $wpdb->get_var($query);
+
+  return ($exists) ? true : false;
+}
