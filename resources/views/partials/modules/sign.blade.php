@@ -10,7 +10,7 @@
       <h2>
         <i class="far fa-pencil-alt" aria-hidden="true"></i> <?php pll_e('Signa', 'fair-funding') ?>
         <a href="{{ $manifest }}" class="manifesto-signatures">
-          {!! $signatures_count !!}
+          {!! $signatures_count !!} <span class="sr-only"><?php pll_e('signatures', 'fair-funding') ?></span>
         </a>
       </h2>
     </div>

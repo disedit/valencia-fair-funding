@@ -11,6 +11,9 @@
       </a>
 
       @if(is_front_page())
+        <div class="sign-cta d-lg-none">
+          <a href="#sign-form" class="btn btn-outline-light"><i class="far fa-pencil-alt"></i> Signa el manifest</a>
+        </div>
         @include('partials.modules.metro')
       @endif
   </div>
