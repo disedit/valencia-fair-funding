@@ -13,10 +13,10 @@
         <ul class="d-flex d-lg-flex">
           {{ App\wp_nav_menu_no_ul() }}
           <li>
-            <div class="fb-like" data-href="{{ urlencode('https://finançamentjust.com') }}" data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="false"></div>
+            <div class="fb-like" data-href="https://finançamentjust.com" data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="false"></div>
           </li>
           <li>
-            <a href="https://twitter.com/share?ref_src={{ home_url('/') }}" class="twitter-share-button" data-size="large" data-text="<?php pll_e('Tweet', 'fair-funding') ?>" data-url="{{ home_url('/') }}" data-hashtags="FinançamentJust" data-show-count="false">Tweet</a>
+            <a href="https://twitter.com/share?ref_src={{ urlencode('https://finançamentjust.com') }}" class="twitter-share-button" data-size="large" data-text="<?php pll_e('Signa per un #FinançamentJust per al poble valencià', 'fair-funding') ?>" data-url="https://finançamentjust.com" data-hashtags="FinançamentJust" data-show-count="false">Tweet</a>
           </li>
           @php(pll_the_languages())
         </ul>

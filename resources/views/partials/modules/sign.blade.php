@@ -68,8 +68,8 @@
           <h4 class="card-title"><?php pll_e('Gràcies pel teu suport!', 'fair-funding') ?></h4>
           <hr />
           <p><?php pll_e('Convida a les teues amistats', 'fair-funding') ?></p>
-          <div class="mb-2"><div class="fb-like" data-href="{{ home_url('/') }}" data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="false"></div></div>
-          <div><a href="https://twitter.com/share?ref_src={{ home_url('/') }}" class="twitter-share-button" data-size="large" data-text="<?php pll_e('Tweet', 'fair-funding') ?>" data-url="{{ home_url('/') }}" data-hashtags="FinançamentJust" data-show-count="true">Tweet</a></div>
+          <div class="mb-2"><div class="fb-like" data-href="https://finançamentjust.com" data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="false"></div></div>
+          <div><a href="https://twitter.com/share?ref_src={{ urlencode('https://finançamentjust.com') }}" class="twitter-share-button" data-size="large" data-text="<?php pll_e('Signa per un #FinançamentJust per al poble valencià', 'fair-funding') ?>" data-url="https://finançamentjust.com" data-hashtags="FinançamentJust" data-show-count="true">Tweet</a></div>
           <hr />
           <p class="card-text"><a href="{{ $manifest }}" class="btn btn-outline-light"><?php pll_e('Llistat de signatures', 'fair-funding') ?> <i class="far fa-chevron-right"></i></a></p>
         </div>
