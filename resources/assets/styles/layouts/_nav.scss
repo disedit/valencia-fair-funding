@@ -115,6 +115,10 @@
 }
 
 @include media-breakpoint-up(lg) {
+  .menu-item {
+    display: none;
+  }
+
   .top {
     background: $white;
   }
