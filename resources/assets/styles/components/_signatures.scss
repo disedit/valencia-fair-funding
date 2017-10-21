@@ -30,3 +30,55 @@
     }
   }
 }
+
+.reveal {
+  overflow: hidden;
+  animation: 1s reveal ease-in;
+}
+
+.signature-list {
+  overflow: hidden;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-height: 100px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff);
+  }
+
+  &[data-type=individual] {
+    max-height: 400px;
+  }
+
+  &[data-type=organization] {
+    max-height: 400px;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .module-signatures {
+    h4 {
+      margin-left: -3rem;
+      margin-right: -3rem;
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .signature-list {
+    &[data-type=individual] {
+      max-height: 2300px;
+    }
+
+    &[data-type=organization] {
+      max-height: 800px;
+    }
+  }
+}

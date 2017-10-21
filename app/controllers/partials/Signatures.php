@@ -28,10 +28,11 @@ trait Signatures
     return $wpdb->num_rows;
   }
 
-  public static function signatures($type, $offset, $limit)
+  public static function signatures($type = 'individual', $offset = 0, $limit = 20, $rand = false)
   {
     global $wpdb;
-    $query = $wpdb->prepare("SELECT name FROM signatures WHERE type = '%s' AND visible = 1 AND is_public = 1 ORDER BY id DESC LIMIT %d, %d", $type, $offset, $limit);
+    $order = ($rand) ? 'rand()' : 'id DESC';
+    $query = $wpdb->prepare("SELECT name FROM signatures WHERE type = %s AND visible = 1 AND is_public = 1 ORDER BY $order LIMIT %d, %d", $type, $offset, $limit);
     $signatures = $wpdb->get_results($query);
 
     return $signatures;

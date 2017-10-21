@@ -8,6 +8,7 @@ import "./autoload/**/*"
 import Router from './util/Router';
 import common from './routes/common';
 import home from './routes/home';
+import templateManifesto from './routes/manifesto';
 
 /** Populate Router instance with DOM routes */
 const routes = new Router({
@@ -15,6 +16,8 @@ const routes = new Router({
   common,
   // Home page
   home,
+  // Signatures
+  templateManifesto,
 });
 
 // Load Events

@@ -89,23 +89,31 @@
               $signatures_organizations = TemplateManifesto::signatures('organization', 0, 20);
             @endphp
             <h4>{!! $signatures_count_organizations !!} <?php pll_e('entitats adherides', 'fair-funding') ?></h4>
-            <ul>
+            <ul id="signaturesOrganizations" class="signature-list" data-type="organization">
               @foreach($signatures_organizations as $organization)
                 <li>{{ $organization->name }}</li>
               @endforeach
-              <li class="more"><a href="/signatures"><i class="far fa-plus-circle"></i> <?php pll_e('Més...', 'fair-funding'); ?></a></li>
             </ul>
+            @if($signatures_count_organizations > 20)
+              <ul>
+                <li class="more"><a href="/signatures" data-type="organization"><i class="far fa-plus-circle"></i> <?php pll_e('Més...', 'fair-funding'); ?></a></li>
+              </ul>
+            @endif
 
             @php
               $signatures_people = TemplateManifesto::signatures('individual', 0, 60);
             @endphp
             <h4>{!! $signatures_count_people !!} <?php pll_e('persones adherides', 'fair-funding') ?></h4>
-            <ul>
+            <ul id="signaturesPeople" class="signature-list" data-type="individual">
               @foreach($signatures_people as $person)
                 <li>{{ $person->name }}</li>
               @endforeach
-              <li class="more"><a href="/signatures"><i class="far fa-plus-circle"></i> <?php pll_e('Més...', 'fair-funding'); ?></a></li>
             </ul>
+            @if($signatures_count_people > 60)
+              <ul>
+                <li class="more"><a href="/signatures" data-type="individual"><i class="far fa-plus-circle"></i> <?php pll_e('Més...', 'fair-funding'); ?></a></li>
+              </ul>
+            @endif
           </a>
         </div>
       </div>
