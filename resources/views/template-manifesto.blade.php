@@ -35,7 +35,7 @@
             <div class="d-none d-sm-block">
               <h2><?php pll_e('Adhereix-te', 'fair-funding') ?></h2>
               <p><?php pll_e('Signa en favor d\'un <strong>#FinançamentJust</strong> per al poble valencià.', 'fair-funding') ?></p>
-              <a href="#sign" class="btn btn-lg btn-primary btn-sign btn-block"><i class="far fa-pencil-alt"></i> Signa el manifest</a>
+              <a href="#sign" class="btn btn-lg btn-primary btn-sign btn-block"><i class="far fa-pencil-alt"></i> <?php pll_e('Signa el manifest', 'fair-funding'); ?></a>
             </div>
 
             <hr class="my-4" />
