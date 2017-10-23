@@ -39,6 +39,10 @@ function add_signature() {
   $email = (isset($_POST['email'])) ? $_POST['email'] : false;
   $is_public = (isset($_POST['is_public'])) ? $_POST['is_public'] : 0;
 
+  $nif = str_replace(" ", "", $nif);
+  $nif = str_replace("-", "", $nif);
+  $nif = str_replace(".", "", $nif);
+
   // Type validation
   if(!in_array($type, array('individual', 'organization'))) {
     $response['status'] = 'error';
