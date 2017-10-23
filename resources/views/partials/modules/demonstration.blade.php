@@ -4,13 +4,14 @@
 
 <div class="module module-demonstration">
   <div class="module-content">
-    <h2><?php pll_e('Manifestació', 'fair-funding') ?></h2>
-    <h3>València</h3>
-    <div class="date">
-      18N
-    </div>
-
     <ul>
+      <li>
+        <a href="{{ $permalink }}" data-title="<?php pll_e('Manifestació 18N', 'fair-funding') ?>" data-container="page-content" data-target="venue" class="load-modal">
+          <h2><?php pll_e('Manifestació', 'fair-funding') ?></h2>
+          <h3>València</h3>
+          <div class="date">18N</div>
+        </a>
+      </li>
       <li>
         <a href="{{ $permalink }}" data-title="<?php pll_e('Manifestació 18N', 'fair-funding') ?>" data-container="page-content" data-target="venue" class="load-modal">
           <i class="far fa-map-marker-alt"></i>
