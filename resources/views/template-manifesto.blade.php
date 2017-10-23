@@ -19,8 +19,8 @@
             <div class="attachments">
               <h4><?php pll_e('Documents adjunts', 'fair-funding') ?></h4>
               <ul>
-                <li><a href=""><i class="far fa-file"></i> Manifest en valencià <abbr>PDF</abbr></a></li>
-                <li><a href=""><i class="far fa-file"></i> Manifiesto en castellano <abbr>PDF</abbr></a></li>
+                <li><a href="https://xn--finanamentjust-kjb.com/wp-content/uploads/2017/10/Manifest.pdf"><i class="far fa-file"></i> Manifest en valencià <abbr>PDF</abbr></a></li>
+                <li><a href="https://xn--finanamentjust-kjb.com/wp-content/uploads/2017/10/20170915-acuerdo-y-adhesion-financiacion-inversion-justa-cv.pdf"><i class="far fa-file"></i> Manifiesto en castellano <abbr>PDF</abbr></a></li>
               </ul>
             </div>
           </div>
@@ -91,11 +91,11 @@
             <h4>{!! $signatures_count_organizations !!} <?php pll_e('entitats adherides', 'fair-funding') ?></h4>
             <ul id="signaturesOrganizations" class="signature-list" data-type="organization">
               @foreach($signatures_organizations as $organization)
-                <li>{{ $organization->name }}</li>
+                <li>{{ stripslashes($organization->name) }}</li>
               @endforeach
             </ul>
             @if($signatures_count_organizations > 20)
-              <ul>
+              <ul class="d-none">
                 <li class="more"><a href="/signatures" data-type="organization"><i class="far fa-plus-circle"></i> <?php pll_e('Més...', 'fair-funding'); ?></a></li>
               </ul>
             @endif
@@ -110,7 +110,7 @@
               @endforeach
             </ul>
             @if($signatures_count_people > 60)
-              <ul>
+              <ul class="d-none">
                 <li class="more"><a href="/signatures" data-type="individual"><i class="far fa-plus-circle"></i> <?php pll_e('Més...', 'fair-funding'); ?></a></li>
               </ul>
             @endif

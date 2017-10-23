@@ -35,6 +35,14 @@ trait Signatures
     $query = $wpdb->prepare("SELECT name FROM signatures WHERE type = %s AND visible = 1 AND is_public = 1 ORDER BY $order LIMIT %d, %d", $type, $offset, $limit);
     $signatures = $wpdb->get_results($query);
 
+    if($type == 'individual') {
+      $i = 0;
+      foreach($signatures as $signatura) {
+        $signatures[$i]->name = titleCase($signatura->name);
+        $i++;
+      }
+    }
+
     return $signatures;
   }
 }
