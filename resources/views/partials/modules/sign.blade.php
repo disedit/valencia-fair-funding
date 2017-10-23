@@ -15,7 +15,7 @@
       </h2>
     </div>
 
-    <p class="module-text">{!! pll_e('Signa en favor d\'un <strong>#FinançamentJust</strong> per al poble valencià.', 'fair-funding') !!}</p>
+    <p class="module-text"><?php pll_e("Signa en favor d'un <strong>#FinançamentJust</strong> per al poble valencià.", 'fair-funding') ?></p>
 
     <hr />
 
