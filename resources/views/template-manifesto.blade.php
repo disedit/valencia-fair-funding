@@ -103,7 +103,7 @@
             @php
               $signatures_people = TemplateManifesto::signatures('individual', 0, 60);
             @endphp
-            <h4>{!! $signatures_count_people !!} <?php pll_e('persones adherides', 'fair-funding') ?></h4>
+            <h4>{{ number_format($signatures_count_people, 0, ",", ".") }} <?php pll_e('persones adherides', 'fair-funding') ?></h4>
             <ul id="signaturesPeople" class="signature-list" data-type="individual">
               @foreach($signatures_people as $person)
                 <li>{{ $person->name }}</li>
