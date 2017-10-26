@@ -23,5 +23,5 @@
     </div>
   </div>
 
-  {{--@include('partials.modules.articles')--}}
+  @include('partials.modules.articles')
 @endsection
