@@ -51,10 +51,17 @@ export default {
 
       if(value == 'organization') {
         $(".visible-individual").hide();
+        $(".visible-committee").hide();
         $(".visible-organization").show();
+        $("#isPublic").attr('checked', true);
+      } else if(value == 'committee') {
+        $(".visible-individual").hide();
+        $(".visible-committee").show();
+        $(".visible-organization").hide();
         $("#isPublic").attr('checked', true);
       } else {
         $(".visible-individual").show();
+        $(".visible-committee").hide();
         $(".visible-organization").hide();
       }
     });
@@ -78,6 +85,7 @@ export default {
           $("#signSuccess h4").focus();
           $("#type1").attr('checked', true);
           $("#type2").attr('checked', false);
+          $("#type3").attr('checked', false);
           $("#name").val('');
           $("#email").val('');
           $("#isPublic").attr('checked', false);

@@ -33,15 +33,32 @@
           <span class="custom-control-indicator"></span>
           <span class="custom-control-description"><?php pll_e('Entitat', 'fair-funding') ?></span>
         </label>
+        <label class="custom-control custom-radio">
+          <input id="type3" name="type" value="committee" type="radio" class="custom-control-input">
+          <span class="custom-control-indicator"></span>
+          <span class="custom-control-description"><?php pll_e("Comité d'empresa", 'fair-funding') ?></span>
+        </label>
       </div>
 
       <div class="form-group main-input">
-        <label for="name"><span class="visible-individual"><?php pll_e('Nom i cognoms', 'fair-funding') ?></span> <span class="sr-only">o</span> <span class="visible-organization" style="display: none"><?php pll_e('Nom de la entitat', 'fair-funding') ?></span></label>
+        <label for="name">
+          <span class="visible-individual"><?php pll_e('Nom i cognoms', 'fair-funding') ?></span>
+          <span class="sr-only">o</span>
+          <span class="visible-organization" style="display: none"><?php pll_e('Nom de la entitat', 'fair-funding') ?></span>
+          <span class="sr-only">o</span>
+          <span class="visible-committee" style="display: none"><?php pll_e('Nom del comité', 'fair-funding') ?></span>
+        </label>
         <input type="text" class="form-control form-control-lg" id="name" name="name" aria-describedby="nameHelp" required>
         <small id="nameHelp" class="invalid-feedback"></small>
       </div>
       <div class="form-group main-input">
-        <label for="nif"><span class="visible-individual"><?php pll_e('DNI/NIE', 'fair-funding') ?></span> <span class="sr-only">o</span> <span class="visible-organization" style="display: none"><?php pll_e('CIF', 'fair-funding') ?></span></label>
+        <label for="nif">
+          <span class="visible-individual"><?php pll_e('DNI/NIE', 'fair-funding') ?></span>
+          <span class="sr-only">o</span>
+          <span class="visible-organization" style="display: none"><?php pll_e('CIF', 'fair-funding') ?></span>
+          <span class="sr-only">o</span>
+          <span class="visible-committee" style="display: none"><?php pll_e('Nom del representant', 'fair-funding') ?></span>
+        </label>
         <input type="text" class="form-control form-control-lg" id="nif" name="nif" aria-describedby="emailHelp" required>
         <small id="nifHelp" class="invalid-feedback"></small>
       </div>
@@ -56,6 +73,7 @@
         <span class="custom-control-description">
           <span class="visible-individual"><?php pll_e('Afegeix el meu nom al llistat públic', 'fair-funding') ?></span>
           <span class="visible-organization" style="display: none" aria-hidden="true"><?php pll_e('Afegeix la entitat al llistat públic', 'fair-funding') ?></span>
+          <span class="visible-committee" style="display: none" aria-hidden="true"><?php pll_e('Afegeix el comité al llistat públic', 'fair-funding') ?></span>
         </span>
       </label>
       <button type="submit" class="btn btn-primary btn-block btn-lg"><?php pll_e('Signa', 'fair-funding') ?></button>

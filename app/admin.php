@@ -44,7 +44,7 @@ function add_signature() {
   $nif = str_replace(".", "", $nif);
 
   // Type validation
-  if(!in_array($type, array('individual', 'organization'))) {
+  if(!in_array($type, array('individual', 'organization', 'committee'))) {
     $response['status'] = 'error';
     $response['errors'][] = array('input' => 'type', 'message' => pll__('Camp Tipus invalid', 'fair-funding'));
   }
@@ -58,13 +58,13 @@ function add_signature() {
 
   // NIF validation
   $validNif = isValidIdNumber($nif);
-  if(!$validNif) {
+  if(!$validNif && $type != 'committee') {
     $response['status'] = 'error';
     $response['errors'][] = array('input' => 'nif', 'message' => pll__('El DNI/NIE/CIF introduït no és vàlid.', 'fair-funding'));
   }
 
   $nifExists = exists('nif', $nif);
-  if($nifExists) {
+  if($nifExists && $type != 'committee') {
     $response['status'] = 'error';
     $response['errors'][] = array('input' => 'nif', 'message' => pll__('Aquest DNI/NIE/CIF ja ha signat el manifest.', 'fair-funding'));
   }
