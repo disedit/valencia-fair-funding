@@ -45,8 +45,15 @@
             <div class="attachments">
               <p><?php pll_e('Descarrega la moció que s\'està presentant als ajuntaments.', 'fair-funding') ?></p>
               <ul>
-                <li><a href="https://xn--finanamentjust-kjb.com/wp-content/uploads/2017/10/Moció-Finançament-Just.doc"><i class="far fa-file-alt"></i> Moció en valencià <abbr>PDF</abbr></a></li>
+                <li><a href="https://xn--finanamentjust-kjb.com/wp-content/uploads/2017/10/Moció-FinançamentJust.doc"><i class="far fa-file-alt"></i> Moció ajuntaments <abbr>VAL</abbr></a></li>
+                <li><a href="https://xn--finanamentjust-kjb.com/wp-content/uploads/2017/10/Moción-FinançamentJust_castellà.doc"><i class="far fa-file-alt"></i> Moción ayuntamientos <abbr>CAS</abbr></a></li>
               </ul>
+              <p class="mt-4"><?php pll_e("Descarrega la moció per a presentar als comités d'empresa.", 'fair-funding') ?></p>
+              <ul>
+                <li><a href="https://xn--finanamentjust-kjb.com/wp-content/uploads/2017/10/Comités-empresa_FinançamentJust.doc"><i class="far fa-file-alt"></i> Moció comités <abbr>VAL</abbr></a></li>
+                <li><a href="https://xn--finanamentjust-kjb.com/wp-content/uploads/2017/10/Comités-empresa_FinançamentJust_castellà.doc"><i class="far fa-file-alt"></i> Moción comités <abbr>CAS</abbr></a></li>
+              </ul>
+
             </div>
 
             <hr class="my-4" />
@@ -56,8 +63,8 @@
             <div class="attachments">
               <p><?php pll_e('Descarrega el pamflet per repartir al carrer.', 'fair-funding') ?></p>
               <ul>
-                <li><a href="https://xn--finanamentjust-kjb.com/wp-content/uploads/2017/10/Manifest_finançamentjust.jpg"><i class="far fa-file-alt"></i> Pamflet en valencià <abbr>PDF</abbr></a></li>
-                <li><a href="https://xn--finanamentjust-kjb.com/wp-content/uploads/2017/10/Manifiesto_finançamentjust.jpg"><i class="far fa-file-alt"></i> Panfleto en castellano <abbr>PDF</abbr></a></li>
+                <li><a href="https://xn--finanamentjust-kjb.com/wp-content/uploads/2017/10/Manifest_finançamentjust.jpg"><i class="far fa-file-alt"></i> Pamflet <abbr>VAL</abbr></a></li>
+                <li><a href="https://xn--finanamentjust-kjb.com/wp-content/uploads/2017/10/Manifiesto_finançamentjust.jpg"><i class="far fa-file-alt"></i> Panfleto <abbr>CAS</abbr></a></li>
               </ul>
             </div>
           </div>
@@ -72,7 +79,7 @@
             <h4><?php pll_e('Convocants', 'fair-funding') ?></h4>
             <ul>
               <li>CCOO País Valencià</li>
-              <li>UGT</li>
+              <li>UGT País Valencià</li>
               <li>PSPV-PSOE</li>
               <li>Compromís</li>
               <li>Podem</li>
