@@ -1,5 +1,6 @@
 export default {
   init() {
+    this.fetchSignature('committee', 2, 20, 6000);
     this.fetchSignature('organization', 2, 20, 4000);
     this.fetchSignature('individual', 2, 60, 3000);
   },

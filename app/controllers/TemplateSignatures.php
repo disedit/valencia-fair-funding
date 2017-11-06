@@ -10,7 +10,7 @@ class TemplateSignatures extends Controller
 
   public function json()
   {
-    $type = ($_GET['type'] == 'individual') ? 'individual' : 'organization';
+    $type = (in_array($_GET['type'], array('individual', 'organization', 'committee'))) ? $_GET['type'] : 'individual';
     $per_page = min($_GET['per_page'], 100);
     $current_page = intval($_GET['current_page']);
     $offset = ($per_page * $current_page) - $per_page;
