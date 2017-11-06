@@ -93,6 +93,21 @@
             --}}
 
             @php
+              $signatures_committees = TemplateManifesto::signatures('committee', 0, 20);
+            @endphp
+            <h4>{!! $signatures_count_committees !!} <?php pll_e("comités d'empresa", 'fair-funding') ?></h4>
+            <ul id="signaturesCommittees" class="signature-list" data-type="committee">
+              @foreach($signatures_committees as $committee)
+                <li>{{ stripslashes($committee->name) }}</li>
+              @endforeach
+            </ul>
+            @if($signatures_count_committees > 20)
+              <ul class="d-none">
+                <li class="more"><a href="/signature-modal/?type=committee&per_page=1000&page=1" data-title="Comités d'empresa" data-container="page-content" class="load-modal"><i class="far fa-plus-circle"></i> <?php pll_e('Més...', 'fair-funding'); ?></a></li>
+              </ul>
+            @endif
+
+            @php
               $signatures_organizations = TemplateManifesto::signatures('organization', 0, 20);
             @endphp
             <h4>{!! $signatures_count_organizations !!} <?php pll_e('entitats adherides', 'fair-funding') ?></h4>
@@ -102,8 +117,8 @@
               @endforeach
             </ul>
             @if($signatures_count_organizations > 20)
-              <ul class="d-none">
-                <li class="more"><a href="/signatures" data-type="organization"><i class="far fa-plus-circle"></i> <?php pll_e('Més...', 'fair-funding'); ?></a></li>
+              <ul>
+                <li class="more"><a href="/signature-modal/?type=organization&per_page=1000&page=1" data-title="Entitats adherides" data-container="page-content" class="load-modal"><i class="far fa-plus-circle"></i> <?php pll_e('Més...', 'fair-funding'); ?></a></li>
               </ul>
             @endif
 

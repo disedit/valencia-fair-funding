@@ -12,6 +12,14 @@ trait Signatures
     return $wpdb->num_rows;
   }
 
+  public function signaturesCountCommittees()
+  {
+    global $wpdb;
+    $wpdb->get_results("SELECT id FROM signatures WHERE type = 'committee'");
+
+    return $wpdb->num_rows;
+  }
+
   public function signaturesCountOrganizations()
   {
     global $wpdb;
