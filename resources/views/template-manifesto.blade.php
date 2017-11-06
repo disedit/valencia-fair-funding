@@ -96,7 +96,7 @@
             </ul>
             @if($signatures_count_committees > 20)
               <ul class="d-none">
-                <li class="more"><a href="/signatures" data-type="organization"><i class="far fa-plus-circle"></i> <?php pll_e('Més...', 'fair-funding'); ?></a></li>
+                <li class="more"><a href="/signature-modal/?type=committee&per_page=1000&page=1" data-title="Comités d'empresa" data-container="page-content" class="load-modal"><i class="far fa-plus-circle"></i> <?php pll_e('Més...', 'fair-funding'); ?></a></li>
               </ul>
             @endif
 
@@ -110,8 +110,8 @@
               @endforeach
             </ul>
             @if($signatures_count_organizations > 20)
-              <ul class="d-none">
-                <li class="more"><a href="/signatures" data-type="organization"><i class="far fa-plus-circle"></i> <?php pll_e('Més...', 'fair-funding'); ?></a></li>
+              <ul>
+                <li class="more"><a href="/signature-modal/?type=organization&per_page=1000&page=1" data-title="Entitats adherides" data-container="page-content" class="load-modal"><i class="far fa-plus-circle"></i> <?php pll_e('Més...', 'fair-funding'); ?></a></li>
               </ul>
             @endif
 

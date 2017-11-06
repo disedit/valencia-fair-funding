@@ -4,11 +4,11 @@ namespace App;
 
 use Sober\Controller\Controller;
 
-class TemplateSignatures extends Controller
+class TemplateSignatureModal extends Controller
 {
   use Signatures;
 
-  public function json()
+  public function signatures()
   {
     $type = (isset($_GET['type'])) ? $_GET['type'] : null;
     $type = (in_array($type, array('individual', 'organization', 'committee'))) ? $type : 'individual';
