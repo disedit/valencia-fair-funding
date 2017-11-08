@@ -85,12 +85,15 @@
               <li>Podem</li>
             </ul>
 
-            {{--
-            <h4>{{ pll_e('Promotors', 'fair-funding') }}</h4>
-            <ul>
-              <li></li>
+            @php
+              $signatures_sponsors = TemplateManifesto::signatures('sponsor', 0, 20);
+            @endphp
+            <h4><?php pll_e("Promotors", 'fair-funding') ?></h4>
+            <ul class="signature-list no-gradient">
+              @foreach($signatures_sponsors as $sponsor)
+                <li>{{ stripslashes($sponsor->name) }}</li>
+              @endforeach
             </ul>
-            --}}
 
             @php
               $signatures_committees = TemplateManifesto::signatures('committee', 0, 20);
