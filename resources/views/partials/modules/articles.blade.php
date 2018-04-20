@@ -10,7 +10,7 @@
       <div class="module-content">
         <div class="module-header">
           <a href="{{ App::getPermalinkInLanguage('premsa') }}">
-            <h2><i class="far fa-file-alt" aria-hidden="true"></i> <?php pll_e('Notes de premsa', 'fair-funding') ?></h2>
+            <h2><i class="far fa-newspaper" aria-hidden="true"></i> <?php pll_e('Notes de premsa', 'fair-funding') ?></h2>
           </a>
         </div>
       </div>

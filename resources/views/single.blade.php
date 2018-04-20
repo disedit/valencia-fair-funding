@@ -6,12 +6,12 @@
       <div class="col-lg-2 col-sm-4 d-flex align-items-stretch">
         <div class="module module-articles-title">
           <div class="module-icon d-none d-md-block">
-            <i class="far fa-file-alt" aria-hidden="true"></i>
+            <i class="far fa-newspaper" aria-hidden="true"></i>
           </div>
           <div class="module-content">
             <div class="module-header">
               <a href="{{ App::getPermalinkInLanguage('premsa') }}">
-                <h2><i class="far fa-file-alt" aria-hidden="true"></i> <?php pll_e('Notes de premsa', 'fair-funding') ?></h2>
+                <h2><i class="far fa-newspaper" aria-hidden="true"></i> <?php pll_e('Notes de premsa', 'fair-funding') ?></h2>
               </a>
             </div>
           </div>
