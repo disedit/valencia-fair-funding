@@ -3,8 +3,7 @@
 @section('content')
   <div class="row">
     <div class="col-lg-3 col-md-4 demonstration">
-      @include('partials.modules.demonstration')
-      @include('partials.modules.downloads')
+      @include('partials.modules.articles-sidebar')
     </div>
 
     <div class="col-lg-6 col-md-8 manifesto">
@@ -22,6 +21,4 @@
       </div>
     </div>
   </div>
-
-  @include('partials.modules.articles')
 @endsection

@@ -1,1 +1,1 @@
-@include('partials.modules.demonstration')
+@include('partials.modules.articles-sidebar')

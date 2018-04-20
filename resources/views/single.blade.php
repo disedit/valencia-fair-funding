@@ -25,9 +25,7 @@
         </div>
       </div>
       <div class="col-lg-3 sidebar">
-        <div class="module">
-          @include('partials.modules.demonstration')
-        </div>
+          @include('partials.modules.articles-sidebar')
       </div>
     </div>
   @endwhile

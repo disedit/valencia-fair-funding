@@ -24,6 +24,10 @@
 .module-articles {
   background: $white;
   width: 100%;
+
+  .module-header a {
+    color: $pink;
+  }
 }
 
 .module-articles-main {
@@ -90,6 +94,21 @@
     bottom: 1rem;
     right: 1rem;
     color: $dark-color;
+  }
+}
+
+.module-articles-vertical {
+  .article-item {
+    max-width: 100% !important;
+    flex: none !important;
+
+    &:hover .post {
+      transform: none;
+    }
+  }
+
+  .post {
+    margin: 0 0 1rem;
   }
 }
 
