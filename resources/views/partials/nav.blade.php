@@ -1,10 +1,6 @@
 <nav class="top">
   <div class="container-fluid">
     <div class="hashtag first-hashtag">
-      <h1><a href="{{ pll_home_url() }}">#18N</a></h1>
-    </div>
-
-    <div class="hashtag second-hashtag elem-hidden">
       <h1><a href="{{ pll_home_url() }}">#FinançamentJust</a></h1>
     </div>
 

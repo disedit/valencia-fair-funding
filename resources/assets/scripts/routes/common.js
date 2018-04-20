@@ -1,15 +1,6 @@
 export default {
   init() {
     /**
-     * Header change on scroll
-     */
-    $(window).bind('scroll', function(){
-      $(".second-hashtag").toggleClass('elem-hidden',$(this).scrollTop() <= 200);
-      $(".first-hashtag").toggleClass('elem-hidden',$(this).scrollTop() > 200);
-      $(".top").toggleClass('top-shadow',$(this).scrollTop() > 1);
-    });
-
-    /**
      * Mobile menu toggle
      */
     $(".menu-trigger a").on('click', function(e) {
