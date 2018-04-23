@@ -22,22 +22,19 @@
     <form id="signAction" action="{{ esc_url(admin_url('admin-post.php')) }}" method="post">
       <input type="hidden" name="action" value="sign">
 
-      <div class="mb-2">
-        <label class="custom-control custom-radio">
+      <div class="mb-2 type-of-signature">
+        <div class="custom-control custom-radio">
           <input id="type1" name="type" value="individual" type="radio" class="custom-control-input" checked="checked">
-          <span class="custom-control-indicator"></span>
-          <span class="custom-control-description"><?php pll_e('Persona', 'fair-funding') ?></span>
-        </label>
-        <label class="custom-control custom-radio">
+          <label class="custom-control-label" for="type1"><?php pll_e('Persona', 'fair-funding') ?></label>
+        </div>
+        <div class="custom-control custom-radio">
           <input id="type2" name="type" value="organization" type="radio" class="custom-control-input">
-          <span class="custom-control-indicator"></span>
-          <span class="custom-control-description"><?php pll_e('Entitat', 'fair-funding') ?></span>
-        </label>
-        <label class="custom-control custom-radio">
+          <label class="custom-control-label" for="type2"><?php pll_e('Entitat', 'fair-funding') ?></label>
+        </div>
+        <div class="custom-control custom-radio">
           <input id="type3" name="type" value="committee" type="radio" class="custom-control-input">
-          <span class="custom-control-indicator"></span>
-          <span class="custom-control-description"><?php pll_e("Comité d'empresa", 'fair-funding') ?></span>
-        </label>
+          <label class="custom-control-label" for="type3"><?php pll_e("Comité d'empresa", 'fair-funding') ?></label>
+        </div>
       </div>
 
       <div class="form-group main-input">
@@ -67,15 +64,14 @@
         <input type="email" class="form-control form-control-lg" id="email" name="email" aria-describedby="emailHelp" required>
         <small id="emailHelp" class="invalid-feedback"></small>
       </div>
-      <label class="custom-control custom-checkbox mt-2">
+      <div class="custom-control custom-checkbox mt-2">
         <input type="checkbox" name="is_public" id="isPublic" value="1" class="custom-control-input">
-        <span class="custom-control-indicator"></span>
-        <span class="custom-control-description">
+        <label class="custom-control-label" for="isPublic">
           <span class="visible-individual"><?php pll_e('Afegeix el meu nom al llistat públic', 'fair-funding') ?></span>
           <span class="visible-organization" style="display: none" aria-hidden="true"><?php pll_e('Afegeix la entitat al llistat públic', 'fair-funding') ?></span>
           <span class="visible-committee" style="display: none" aria-hidden="true"><?php pll_e('Afegeix el comité al llistat públic', 'fair-funding') ?></span>
-        </span>
-      </label>
+        </label>
+      </div>
       <button type="submit" class="btn btn-primary btn-block btn-lg"><?php pll_e('Signa', 'fair-funding') ?></button>
     </form>
 
