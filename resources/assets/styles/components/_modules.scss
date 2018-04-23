@@ -41,6 +41,18 @@
   margin-top: 2rem;
 }
 
+.sign-share {
+  order: 3;
+}
+
+.manifesto {
+  order: 1;
+}
+
+.demonstration {
+  order: 2;
+}
+
 @include media-breakpoint-up(lg) {
   .sign-share {
     order: 1;
