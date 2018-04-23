@@ -2,12 +2,12 @@
 
 @section('content')
   <div class="row">
-    <div class="col-lg-3 col-md-4 demonstration">
-      @include('partials.modules.articles-sidebar')
-    </div>
-
     <div class="col-lg-6 col-md-8 manifesto">
       @include('partials.modules.manifesto')
+    </div>
+
+    <div class="col-lg-3 col-md-4 demonstration">
+      @include('partials.modules.articles-sidebar')
     </div>
 
     <div class="col-lg-3 sign-share">
