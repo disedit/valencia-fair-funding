@@ -1,5 +1,5 @@
 <nav class="top">
-  <div class="container-fluid">
+  <div class="container">
     <div class="hashtag first-hashtag">
       <h1><a href="{{ pll_home_url() }}">#FinançamentJust</a></h1>
     </div>

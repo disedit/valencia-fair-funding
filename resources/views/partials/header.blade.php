@@ -2,7 +2,7 @@
 
 <header class="container-fluid banner">
   <div class="row">
-    <div class="claim col-lg-9">
+    <div class="claim col-lg-12">
       <a href="{{ pll_home_url() }}">
         <h1>
           <span class="upper-slogan"><?php pll_e('Per un', 'fair-funding') ?></span>
@@ -16,10 +16,5 @@
         </div>
         @include('partials.modules.metro')
       @endif
-  </div>
-  <div class="map col-lg-3 d-none d-lg-block">
-    <div class="map-holder">
-      <img src="@asset('images/header-part2.png')" />
-    </div>
   </div>
 </header>

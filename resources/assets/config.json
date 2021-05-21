@@ -14,7 +14,7 @@
     ]
   },
   "publicPath": "/wp-content/themes/fair-funding",
-  "devUrl": "http://financamentjust.local",
+  "devUrl": "https://financamentjust.test",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [

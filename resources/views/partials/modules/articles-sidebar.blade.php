@@ -2,7 +2,7 @@
   query_posts('posts_per_page=4');
 @endphp
 
-<div class="module module-articles module-articles-vertical">
+<div class="module-articles module-articles-vertical">
   <div class="module-content">
     <div class="module-header">
       <a href="{{ App::getPermalinkInLanguage('premsa') }}">

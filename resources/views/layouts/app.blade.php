@@ -12,7 +12,7 @@
     }(document, 'script', 'facebook-jssdk'));</script>
 
     @php(do_action('get_header'))
-    <div class="page-wrapper">
+    <div class="page-wrapper container">
       @include('partials.header')
       <div class="container-fluid" role="document">
         @yield('content')

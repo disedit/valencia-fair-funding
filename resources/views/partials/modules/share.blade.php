@@ -13,11 +13,5 @@
       <li><a href="https://www.facebook.com/sharer/sharer.php?u={{ rawurlencode('https://finançamentjust.com') }}" class="btn btn-dark btn-facebook btn-lg btn-block" target="_blank" rel="noopener"><i class="fab fa-facebook-square"></i> Facebook</a></li>
       <li><a href="https://twitter.com/intent/tweet?text=<?php rawurlencode(pll__('Signa per un #FinançamentJust per al poble valencià', 'fair-funding')) ?>&url={{ rawurlencode('https://finançamentjust.com') }}&via=finan_just&related=finan_just" class="btn btn-dark btn-twitter btn-lg btn-block"><i class="fab fa-twitter"></i> Twitter</a></li>
     </ul>
-
-    <hr />
-
-    <div class="d-none d-lg-block">
-      <a class="twitter-timeline" data-chrome="noheader nofooter noborders transparent noscrollbar" data-height="500"  href="https://twitter.com/hashtag/FinancamentJust" data-widget-id="920645371428245504">#FinancamentJust Tweets</a>
-    </div>
   </div>
 </div>
