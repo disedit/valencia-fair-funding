@@ -9,20 +9,20 @@
     <div class="module-header">
       <h2>
         <i class="far fa-pencil-alt" aria-hidden="true"></i> <?php pll_e('Signa', 'fair-funding') ?>
-        <a href="{{ $manifest }}" class="manifesto-signatures">
-          {{ number_format($signatures_count, 0, ",", ".") }} <span class="sr-only"><?php pll_e('signatures', 'fair-funding') ?></span>
-        </a>
+        @isset($signatures_count)
+          <a href="{{ $manifest }}" class="manifesto-signatures">
+            {{ number_format($signatures_count, 0, ",", ".") }} <span class="sr-only"><?php pll_e('signatures', 'fair-funding') ?></span>
+          </a>
+        @endif
       </h2>
     </div>
 
     <p class="module-text"><?php pll_e("Signa en favor d'un <strong>#FinançamentJust</strong> per al poble valencià.", 'fair-funding') ?></p>
 
-    <hr />
-
     <form id="signAction" action="{{ esc_url(admin_url('admin-post.php')) }}" method="post">
       <input type="hidden" name="action" value="sign">
 
-      <div class="mb-2 type-of-signature">
+      <!--<div class="mb-2 type-of-signature">
         <div class="custom-control custom-radio">
           <input id="type1" name="type" value="individual" type="radio" class="custom-control-input" checked="checked">
           <label class="custom-control-label" for="type1"><?php pll_e('Persona', 'fair-funding') ?></label>
@@ -35,7 +35,7 @@
           <input id="type3" name="type" value="committee" type="radio" class="custom-control-input">
           <label class="custom-control-label" for="type3"><?php pll_e("Comité d'empresa", 'fair-funding') ?></label>
         </div>
-      </div>
+      </div>-->
 
       <div class="form-group main-input">
         <label for="name">

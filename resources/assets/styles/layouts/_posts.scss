@@ -10,22 +10,8 @@
 
 .entry-share {
   position: relative;
-  margin: 2rem 0 0;
+  margin: 1rem 0 0;
   padding-top: 1rem;
-
-  &::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 40px;
-    border-top: 3px $dark-color solid;
-  }
-
-  .fb-like {
-    top: -7px;
-  }
 }
 
 .post-content,

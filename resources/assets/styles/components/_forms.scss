@@ -5,7 +5,7 @@
   label {
     position: absolute;
     top: 0.62rem;
-    left: 1rem;
+    left: 1.1rem;
     color: $gray-500;
     font-size: 1.15rem;
     transition: 0.2s ease-in-out;
@@ -16,6 +16,10 @@
     padding-top: 1rem;
     padding-bottom: 0.25rem;
     border-radius: 0.5rem;
+
+    &:focus {
+      border-color: $blue;
+    }
   }
 
   &-active {

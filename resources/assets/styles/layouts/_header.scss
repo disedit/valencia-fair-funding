@@ -27,12 +27,16 @@
 
   .banner-icon {
     position: absolute;
-    top: 46px;
+    top: 50%;
     right: -81px;
     z-index: 100;
-    transform: rotate(13deg);
+    transform: rotate(8deg) translateY(-50%);
 
     img {
+      height: 260px;
+    }
+
+    @at-root .home .banner .banner-icon img {
       height: 317px;
     }
   }

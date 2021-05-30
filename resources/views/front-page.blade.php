@@ -9,7 +9,7 @@
     <div class="col-lg-4 sign-share">
       <div class="row">
         <div class="col-md-12 col-lg-12">
-          Entities
+          @include('partials.modules.entities')
         </div>
         <div class="col-md-6 col-lg-12">
           @include('partials.modules.sign')

@@ -5,11 +5,12 @@
 @import 'demonstration';
 @import 'downloads';
 @import 'articles';
+@import 'entities';
 @import 'contact';
 
 .module {
   position: relative;
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 2rem;
   margin: 0 0 2rem 2rem;
 

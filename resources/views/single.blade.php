@@ -2,30 +2,29 @@
 
 @section('content')
   @while(have_posts()) @php(the_post())
-    <div class="row">
-      <div class="col-lg-2 col-sm-4 d-flex align-items-stretch">
-        <div class="module module-articles-title">
-          <div class="module-icon d-none d-md-block">
-            <i class="far fa-newspaper" aria-hidden="true"></i>
-          </div>
-          <div class="module-content">
-            <div class="module-header">
-              <a href="{{ App::getPermalinkInLanguage('premsa') }}">
-                <h2><i class="far fa-newspaper" aria-hidden="true"></i> <?php pll_e('Notícies', 'fair-funding') ?></h2>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-7 col-sm-8 d-flex align-items-stretch">
+    <div class="row page-wrapper">
+      <div class="col-lg-8 d-flex align-items-stretch">
         <div class="module module-articles-main">
           <div class="module-content">
+            <a href="{{ App::getPermalinkInLanguage('premsa') }}">
+              <h2><i class="far fa-newspaper" aria-hidden="true"></i> <?php pll_e('Notícies', 'fair-funding') ?></h2>
+            </a>
             @include('partials.content-single-'.get_post_type())
           </div>
         </div>
       </div>
-      <div class="col-lg-3 sidebar">
-          @include('partials.modules.articles-sidebar')
+      <div class="col-lg-4 sign-share">
+        <div class="row">
+          <div class="col-md-12 col-lg-12">
+            @include('partials.modules.entities')
+          </div>
+          <div class="col-md-6 col-lg-12">
+            @include('partials.modules.sign')
+          </div>
+          <div class="col-md-6 col-lg-12">
+            @include('partials.modules.share')
+          </div>
+        </div>
       </div>
     </div>
   @endwhile
