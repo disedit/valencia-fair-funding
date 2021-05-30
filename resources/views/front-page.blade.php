@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-  <div class="row">
+  <div class="row page-wrapper">
     <div class="col-lg-8 articles">
       @include('partials.modules.articles-sidebar')
     </div>

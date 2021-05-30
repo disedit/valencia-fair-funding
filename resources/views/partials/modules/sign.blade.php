@@ -40,9 +40,7 @@
       <div class="form-group main-input">
         <label for="name">
           <span class="visible-individual"><?php pll_e('Nom i cognoms', 'fair-funding') ?></span>
-          <span class="sr-only">o</span>
           <span class="visible-organization" style="display: none"><?php pll_e('Nom de la entitat', 'fair-funding') ?></span>
-          <span class="sr-only">o</span>
           <span class="visible-committee" style="display: none"><?php pll_e('Nom del comité', 'fair-funding') ?></span>
         </label>
         <input type="text" class="form-control form-control-lg" id="name" name="name" aria-describedby="nameHelp" required>

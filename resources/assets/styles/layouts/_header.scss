@@ -1,4 +1,5 @@
 .banner {
+  position: relative;
   margin-top: 62px;
 
   .claim {
@@ -24,6 +25,18 @@
     }
   }
 
+  .banner-icon {
+    position: absolute;
+    top: 46px;
+    right: -81px;
+    z-index: 100;
+    transform: rotate(13deg);
+
+    img {
+      height: 317px;
+    }
+  }
+
   .map {
     background: $teal;
     text-align: center;
@@ -33,10 +46,6 @@
       position: absolute;
       right: 208px;
       z-index: 20;
-    }
-
-    img {
-      height: 301px;
     }
   }
 
@@ -65,10 +74,6 @@
     position: absolute;
     right: 79px;
     z-index: 20;
-  }
-
-  img {
-    height: 433px;
   }
 }
 
@@ -139,20 +144,12 @@
     .map-holder {
       right: 66px;
     }
-
-    img {
-      height: 237px;
-    }
   }
 
   .home {
     .banner .map {
       .map-holder {
         right: 0;
-      }
-
-      img {
-        height: 369px;
       }
     }
   }

@@ -40,7 +40,9 @@
   transition: opacity 0.2s ease-in-out;
 
   h1 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
   }
 
   a {
@@ -121,10 +123,11 @@
 
   .top {
     background: $white;
+    border-bottom: 1px rgba($blue, 0.25) solid;
   }
 
   .hashtag a {
-    color: $dark-color;
+    color: $blue;
   }
 
   .menu {

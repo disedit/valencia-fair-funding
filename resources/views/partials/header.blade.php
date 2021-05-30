@@ -10,9 +10,13 @@
         </h1>
       </a>
 
+      <div class="banner-icon" aria-hidden="true">
+        <img src="@asset('images/icon.svg')" alt="" />
+      </div>
+
       @if(is_front_page())
         <div class="sign-cta d-lg-none">
-          <a href="#sign-form" class="btn btn-outline-light"><i class="far fa-pencil-alt"></i> Signa el manifest</a>
+          <a href="/manifest" class="btn btn-outline-light"><i class="far fa-pencil-alt"></i> Manifest</a>
         </div>
         @include('partials.modules.metro')
       @endif
