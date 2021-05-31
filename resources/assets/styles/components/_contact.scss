@@ -50,3 +50,10 @@
     margin-bottom: 0;
   }
 }
+
+@include media-breakpoint-down(md) {
+  .module-contact {
+    border-radius: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}

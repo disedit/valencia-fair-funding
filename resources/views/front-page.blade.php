@@ -2,22 +2,14 @@
 
 @section('content')
   <div class="row page-wrapper">
-    <div class="col-lg-8 articles">
+    <div class="col-xl-8 articles">
       @include('partials.modules.articles-sidebar')
     </div>
 
-    <div class="col-lg-4 sign-share">
-      <div class="row">
-        <div class="col-md-12 col-lg-12">
-          @include('partials.modules.entities')
-        </div>
-        <div class="col-md-6 col-lg-12">
-          @include('partials.modules.sign')
-        </div>
-        <div class="col-md-6 col-lg-12">
-          @include('partials.modules.share')
-        </div>
-      </div>
+    <div class="col-xl-4 sign-share">
+      @include('partials.modules.entities')
+      @include('partials.modules.sign')
+      @include('partials.modules.share')
     </div>
   </div>
 @endsection
