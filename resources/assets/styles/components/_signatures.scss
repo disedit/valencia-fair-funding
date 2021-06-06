@@ -1,9 +1,8 @@
 .module-signatures {
+  background: $white;
+
   h4 {
-    background: lighten($teal, 50%);
     color: $teal;
-    margin: 0 -2rem 1rem -2rem;
-    padding: 0.5rem 2rem;
   }
 
   ul {
@@ -61,17 +60,6 @@
 
   &[data-type=organization] {
     max-height: 400px;
-  }
-}
-
-@include media-breakpoint-up(xl) {
-  .module-signatures {
-    h4 {
-      margin-left: -3rem;
-      margin-right: -3rem;
-      padding-left: 3rem;
-      padding-right: 3rem;
-    }
   }
 }
 

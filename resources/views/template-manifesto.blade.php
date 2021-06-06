@@ -7,8 +7,8 @@
 @section('content')
   @while(have_posts()) @php(the_post())
     <div class="row manifesto">
-      <div class="col-lg-6 col-sm-8 main-column">
-        <div class="module">
+      <div class="col-lg-6 main-column">
+        <div class="module manifesto">
           <div class="module-content post-content" id="page-content">
             <h2>@php(the_title())</h2>
 
@@ -29,10 +29,10 @@
           @include('partials.modules.sign')
         </div>
       </div>
-      <div class="col-lg-3 col-sm-4 manifesto-sidebar">
+      <div class="col-lg-3 manifesto-sidebar">
         <div class="module module-page-title motion">
           <div class="module-content">
-            <div class="d-none d-sm-block">
+            <div class="d-none d-lg-block">
               <h2><?php pll_e('Adhereix-te', 'fair-funding') ?></h2>
               <p><?php pll_e('Signa en favor d\'un <strong>#FinançamentJust</strong> per al poble valencià.', 'fair-funding') ?></p>
               <a href="#sign" class="btn btn-lg btn-primary btn-sign btn-block"><i class="far fa-pencil-alt"></i> <?php pll_e('Signa el manifest', 'fair-funding'); ?></a>
@@ -85,9 +85,6 @@
               <li>Podem</li>
             </ul>
 
-            @php
-              $signatures_sponsors = TemplateManifesto::signatures('sponsor', 0, 20);
-            @endphp
             <h4><?php pll_e("Promotors", 'fair-funding') ?></h4>
             <ul class="signature-list no-gradient">
               @foreach($signatures_sponsors as $sponsor)
@@ -95,9 +92,6 @@
               @endforeach
             </ul>
 
-            @php
-              $signatures_committees = TemplateManifesto::signatures('committee', 0, 20);
-            @endphp
             <h4>{!! $signatures_count_committees !!} <?php pll_e("comités d'empresa", 'fair-funding') ?></h4>
             <ul id="signaturesCommittees" class="signature-list" data-type="committee">
               @foreach($signatures_committees as $committee)
@@ -110,9 +104,6 @@
               </ul>
             @endif
 
-            @php
-              $signatures_organizations = TemplateManifesto::signatures('organization', 0, 20);
-            @endphp
             <h4>{!! $signatures_count_organizations !!} <?php pll_e('entitats adherides', 'fair-funding') ?></h4>
             <ul id="signaturesOrganizations" class="signature-list" data-type="organization">
               @foreach($signatures_organizations as $organization)
@@ -125,9 +116,6 @@
               </ul>
             @endif
 
-            @php
-              $signatures_people = TemplateManifesto::signatures('individual', 0, 60);
-            @endphp
             <h4>{{ number_format($signatures_count_people, 0, ",", ".") }} <?php pll_e('persones adherides', 'fair-funding') ?></h4>
             <ul id="signaturesPeople" class="signature-list" data-type="individual">
               @foreach($signatures_people as $person)

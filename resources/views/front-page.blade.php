@@ -4,6 +4,9 @@
   <div class="row page-wrapper">
     <div class="col-xl-8 articles">
       @include('partials.modules.articles-sidebar')
+      <a href="{{ App::getPermalinkInLanguage('premsa') }}" class="more-news">
+        <?php pll_e('Més notícies', 'fair-funding') ?> <i class="far fa-chevron-right"></i>
+      </a>
     </div>
 
     <div class="col-xl-4 sign-share">

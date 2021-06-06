@@ -72,3 +72,18 @@
     }
   }
 }
+
+.more-news {
+  display: block;
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  margin-bottom: 3rem;
+
+  &:hover {
+    background: rgba($blue, 0.15);
+    text-decoration: none;
+    color: inherit;
+  }
+}

@@ -9,6 +9,7 @@
     color: $gray-500;
     font-size: 1.15rem;
     transition: 0.2s ease-in-out;
+    pointer-events: none;
   }
 
   .form-control {

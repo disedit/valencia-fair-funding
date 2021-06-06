@@ -1,5 +1,13 @@
+.row.manifesto {
+  padding: 1rem;
+}
+
 .manifesto {
-  background: $gray-100;
+  .module.manifesto {
+    background: $white;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 
   &-title {
     color: $dark-color;
@@ -45,8 +53,6 @@
 }
 
 .manifesto-sidebar {
-  background: $teal;
-
   .btn {
     background: $not-pink;
 
@@ -78,7 +84,11 @@
   }
 }
 
-@include media-breakpoint-up(sm) {
+@include media-breakpoint-up(lg) {
+  .row.manifesto {
+    padding: 0;
+  }
+
   .manifesto {
     .manifesto-sidebar {
       order: 1;

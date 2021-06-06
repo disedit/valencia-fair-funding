@@ -114,9 +114,25 @@
       text-align: left;
     }
 
+    .upper-slogan {
+      font-size: 2rem;
+    }
+
+    .main-slogan {
+      font-size: 3.5rem;
+      text-align: left;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .banner {
+    .upper-slogan {
+      font-size: 2.5rem;
+    }
+
     .main-slogan {
       font-size: 4rem;
-      text-align: left;
     }
   }
 }
