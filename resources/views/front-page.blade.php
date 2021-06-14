@@ -10,8 +10,9 @@
     </div>
 
     <div class="col-xl-4 sign-share">
-      @include('partials.modules.entities')
+      {{-- @include('partials.modules.entities') --}}
       @include('partials.modules.sign')
+      @include('partials.modules.manifest')
       @include('partials.modules.share')
     </div>
   </div>

@@ -16,7 +16,7 @@
 
       @if(is_front_page())
         <div class="sign-cta d-lg-none">
-          <a href="/manifest" class="btn btn-outline-light"><i class="far fa-file-alt"></i> Manifest</a>
+          <a href="{{ App::getPermalinkInLanguage('manifest') }}" class="btn btn-outline-light"><i class="far fa-file-alt"></i> Manifest</a>
         </div>
         @include('partials.modules.metro')
       @endif
