@@ -9,6 +9,7 @@
           <li class="cev"><a href="http://www.cev.es/" target="_blank" rel="noopener"><img src="@asset('images/cev.png')" alt="CEV" /></a></li>
           <li class="psoe"><a href="http://www.pspvpsoe.net/" target="_blank" rel="noopener"><img src="@asset('images/psoe.png')" alt="PSPV-PSOE" /></a></li>
           <li class="compromis"><a href="https://compromis.net" target="_blank" rel="noopener"><img src="@asset('images/compromis.png')" alt="Compromís" /></a></li>
+          <li class="pp"><a href="http://ppcv.com/" target="_blank" rel="noopener"><img src="@asset('images/pp.png')" alt="Populares Comunidad Valenciana" /></a></li>
           <li class="podemos"><a href="https://cvalenciana.podemos.info/" target="_blank" rel="noopener"><img src="@asset('images/podemos.png')" alt="Unides Podem - Podem - Esquerra Unida" /></a></li>
           <li class="ciudadanos"><a href="http://cortes-valencianas.ciudadanos-cs.org/" target="_blank" rel="noopener"><img src="@asset('images/cs.png')" alt="Ciudadanos Comunidad Valenciana" /></a></li>
         </ul>
