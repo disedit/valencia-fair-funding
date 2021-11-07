@@ -13,6 +13,16 @@
 
     .btn {
       border: 2px $white solid;
+      font-size: 1rem;
+    }
+
+    .btn-whatsapp {
+      background: #25d366;
+
+      &:hover,
+      &:active {
+        background: darken(#25d366, 10%);
+      }
     }
 
     .btn-facebook {
@@ -33,4 +43,10 @@
       }
     }
   }
+}
+
+.module-tweets {
+  background: $white;
+  padding: 0.75rem;
+  overflow: hidden;
 }

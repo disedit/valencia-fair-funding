@@ -87,6 +87,10 @@ add_action('widgets_init', function () {
         'name'          => pll__('Footer', 'fair-funding'),
         'id'            => 'sidebar-footer'
     ] + $config);
+    register_sidebar([
+        'name'          => pll__('Banner', 'fair-funding'),
+        'id'            => 'sidebar-banner'
+    ] + $config);
 });
 
 /**

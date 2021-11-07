@@ -19,8 +19,8 @@
             <div class="attachments">
               <h4><?php pll_e('Documents adjunts', 'fair-funding') ?></h4>
               <ul>
-                <li><a href="https://xn--finanamentjust-kjb.com/wp-content/uploads/2017/10/Manifest.pdf"><i class="far fa-file"></i> Manifest en valencià <abbr>PDF</abbr></a></li>
-                <li><a href="https://xn--finanamentjust-kjb.com/wp-content/uploads/2017/10/20170915-acuerdo-y-adhesion-financiacion-inversion-justa-cv.pdf"><i class="far fa-file"></i> Manifiesto en castellano <abbr>PDF</abbr></a></li>
+                <li><a href="/wp-content/uploads/2017/10/Manifest.pdf"><i class="far fa-file"></i> Manifest en valencià <abbr>PDF</abbr></a></li>
+                <li><a href="/wp-content/uploads/2017/10/20170915-acuerdo-y-adhesion-financiacion-inversion-justa-cv.pdf"><i class="far fa-file"></i> Manifiesto en castellano <abbr>PDF</abbr></a></li>
               </ul>
             </div>
           </div>
@@ -45,27 +45,15 @@
             <div class="attachments">
               <p><?php pll_e('Descarrega la moció que s\'està presentant als ajuntaments.', 'fair-funding') ?></p>
               <ul>
-                <li><a href="https://xn--finanamentjust-kjb.com/wp-content/uploads/2017/10/Moció-FinançamentJust.doc"><i class="far fa-file-alt"></i> Moció ajuntaments <abbr>VAL</abbr></a></li>
-                <li><a href="https://xn--finanamentjust-kjb.com/wp-content/uploads/2017/10/Moción-FinançamentJust_castellà.doc"><i class="far fa-file-alt"></i> Moción ayuntamientos <abbr>CAS</abbr></a></li>
+                <li><a href="/wp-content/uploads/2017/10/Moció-FinançamentJust.doc"><i class="far fa-file-alt"></i> Moció ajuntaments <abbr>VAL</abbr></a></li>
+                <li><a href="/wp-content/uploads/2017/10/Moción-FinançamentJust_castellà.doc"><i class="far fa-file-alt"></i> Moción ayuntamientos <abbr>CAS</abbr></a></li>
               </ul>
               <p class="mt-4"><?php pll_e("Descarrega la moció per a presentar als comités d'empresa.", 'fair-funding') ?></p>
               <ul>
-                <li><a href="https://xn--finanamentjust-kjb.com/wp-content/uploads/2017/10/Comités-empresa_FinançamentJust.doc"><i class="far fa-file-alt"></i> Moció comités <abbr>VAL</abbr></a></li>
-                <li><a href="https://xn--finanamentjust-kjb.com/wp-content/uploads/2017/10/Comités-empresa_FinançamentJust_castellà.doc"><i class="far fa-file-alt"></i> Moción comités <abbr>CAS</abbr></a></li>
+                <li><a href="/wp-content/uploads/2017/10/Comités-empresa_FinançamentJust.doc"><i class="far fa-file-alt"></i> Moció comités <abbr>VAL</abbr></a></li>
+                <li><a href="/wp-content/uploads/2017/10/Comités-empresa_FinançamentJust_castellà.doc"><i class="far fa-file-alt"></i> Moción comités <abbr>CAS</abbr></a></li>
               </ul>
 
-            </div>
-
-            <hr class="my-4" />
-
-            <h2><?php pll_e('Pamflet', 'fair-funding') ?></h2>
-
-            <div class="attachments">
-              <p><?php pll_e('Descarrega el pamflet per repartir al carrer.', 'fair-funding') ?></p>
-              <ul>
-                <li><a href="https://xn--finanamentjust-kjb.com/wp-content/uploads/2017/10/Manifest_finançamentjust.jpg"><i class="far fa-file-alt"></i> Pamflet <abbr>VAL</abbr></a></li>
-                <li><a href="https://xn--finanamentjust-kjb.com/wp-content/uploads/2017/10/Manifiesto_finançamentjust.jpg"><i class="far fa-file-alt"></i> Panfleto <abbr>CAS</abbr></a></li>
-              </ul>
             </div>
           </div>
         </div>
@@ -78,11 +66,14 @@
         <div class="module module-signatures">
             <h4><?php pll_e('Convocants', 'fair-funding') ?></h4>
             <ul>
-              <li>CCOO País Valencià</li>
               <li>UGT País Valencià</li>
+              <li>CCOO País Valencià</li>
+              <li>CEV</li>
               <li>PSPV-PSOE</li>
               <li>Compromís</li>
-              <li>Podem</li>
+              <li>Partido Popular</li>
+              <li>Unides Podem EUPV</li>
+              <li>Ciudadanos</li>
             </ul>
 
             <h4><?php pll_e("Promotors", 'fair-funding') ?></h4>
@@ -91,7 +82,8 @@
                 <li>{{ stripslashes($sponsor->name) }}</li>
               @endforeach
             </ul>
-
+            
+            <?php /*
             <h4>{!! $signatures_count_committees !!} <?php pll_e("comités d'empresa", 'fair-funding') ?></h4>
             <ul id="signaturesCommittees" class="signature-list" data-type="committee">
               @foreach($signatures_committees as $committee)
@@ -103,11 +95,12 @@
                 <li class="more"><a href="/signature-modal/?type=committee&per_page=1000&page=1" data-title="Comités d'empresa" data-container="page-content" class="load-modal"><i class="far fa-plus-circle"></i> <?php pll_e('Més...', 'fair-funding'); ?></a></li>
               </ul>
             @endif
+            */ ?>
 
             <h4>{!! $signatures_count_organizations !!} <?php pll_e('entitats adherides', 'fair-funding') ?></h4>
             <ul id="signaturesOrganizations" class="signature-list" data-type="organization">
               @foreach($signatures_organizations as $organization)
-                <li>{{ stripslashes($organization->name) }}</li>
+                <li>{!! stripslashes($organization->name) !!}</li>
               @endforeach
             </ul>
             @if($signatures_count_organizations > 20)
