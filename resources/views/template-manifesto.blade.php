@@ -50,8 +50,8 @@
               </ul>
               <p class="mt-4"><?php pll_e("Descarrega la moció per a presentar als comités d'empresa.", 'fair-funding') ?></p>
               <ul>
-                <li><a href="/wp-content/uploads/2017/10/Comités-empresa_FinançamentJust.doc"><i class="far fa-file-alt"></i> Moció comités <abbr>VAL</abbr></a></li>
-                <li><a href="/wp-content/uploads/2017/10/Comités-empresa_FinançamentJust_castellà.doc"><i class="far fa-file-alt"></i> Moción comités <abbr>CAS</abbr></a></li>
+                <li><a href="/wp-content/uploads/2021/11/Comités-empresa_FinançamentJust_valencià.doc"><i class="far fa-file-alt"></i> Moció comités <abbr>VAL</abbr></a></li>
+                <li><a href="/wp-content/uploads/2021/11/Comités-empresa_FinançamentJust_castellano.doc"><i class="far fa-file-alt"></i> Moción comités <abbr>CAS</abbr></a></li>
               </ul>
 
             </div>
@@ -76,28 +76,7 @@
               <li>Ciudadanos</li>
             </ul>
 
-            <h4><?php pll_e("Promotors", 'fair-funding') ?></h4>
-            <ul class="signature-list no-gradient">
-              @foreach($signatures_sponsors as $sponsor)
-                <li>{{ stripslashes($sponsor->name) }}</li>
-              @endforeach
-            </ul>
-            
-            <?php /*
-            <h4>{!! $signatures_count_committees !!} <?php pll_e("comités d'empresa", 'fair-funding') ?></h4>
-            <ul id="signaturesCommittees" class="signature-list" data-type="committee">
-              @foreach($signatures_committees as $committee)
-                <li>{{ stripslashes($committee->name) }}</li>
-              @endforeach
-            </ul>
-            @if($signatures_count_committees > 20)
-              <ul class="d-none">
-                <li class="more"><a href="/signature-modal/?type=committee&per_page=1000&page=1" data-title="Comités d'empresa" data-container="page-content" class="load-modal"><i class="far fa-plus-circle"></i> <?php pll_e('Més...', 'fair-funding'); ?></a></li>
-              </ul>
-            @endif
-            */ ?>
-
-            <h4>{!! $signatures_count_organizations !!} <?php pll_e('entitats adherides', 'fair-funding') ?></h4>
+            <h4>{!! $signatures_count_organizations !!} <?php pll_e('Entitats adherides', 'fair-funding') ?></h4>
             <ul id="signaturesOrganizations" class="signature-list" data-type="organization">
               @foreach($signatures_organizations as $organization)
                 <li>{!! stripslashes($organization->name) !!}</li>
@@ -108,19 +87,6 @@
                 <li class="more"><a href="/signature-modal/?type=organization&per_page=1000&page=1" data-title="Entitats adherides" data-container="page-content" class="load-modal"><i class="far fa-plus-circle"></i> <?php pll_e('Més...', 'fair-funding'); ?></a></li>
               </ul>
             @endif
-
-            <h4>{{ number_format($signatures_count_people, 0, ",", ".") }} <?php pll_e('persones adherides', 'fair-funding') ?></h4>
-            <ul id="signaturesPeople" class="signature-list" data-type="individual">
-              @foreach($signatures_people as $person)
-                <li>{{ $person->name }}</li>
-              @endforeach
-            </ul>
-            @if($signatures_count_people > 60)
-              <ul class="d-none">
-                <li class="more"><a href="/signatures" data-type="individual"><i class="far fa-plus-circle"></i> <?php pll_e('Més...', 'fair-funding'); ?></a></li>
-              </ul>
-            @endif
-          </a>
         </div>
       </div>
     </div>

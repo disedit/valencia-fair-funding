@@ -9,15 +9,15 @@
         <ul class="d-flex d-lg-flex">
           {{ App\wp_nav_menu_no_ul() }}
           <li>
-            <a href="https://instagram.com" target="_blank" rel="noopener" title="Instagram">
-              <i class="fab fa-instagram fa-lg"></i> @finanjust
+            <a href="https://www.facebook.com/FinanJust" target="_blank" rel="noopener" title="Facebook">
+              <i class="fab fa-facebook fa-lg"></i> Finançament Just
             </a>
           </li>
-          <!--<li>
+          <li>
             <a href="https://twitter.com/finan_just" target="_blank" rel="noopener" title="Twitter">
               <i class="fab fa-twitter fa-lg"></i> @finan_just
             </a>
-          </li>-->
+          </li>
           @php(pll_the_languages())
         </ul>
       </div>
